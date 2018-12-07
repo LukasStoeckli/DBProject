@@ -38,8 +38,7 @@ CREATE TABLE Weather (
 CREATE TABLE TerrorEvent (
   EID BIGINT PRIMARY KEY,
   eventDate DATE NOT NULL, -- some days are '0'
-  approxStart DATE,
-  approxEnd DATE,
+  approxDate VARCHAR(50),
   extended BOOLEAN NOT NULL,
   resolution DATE,
   tLocation INTEGER NOT NULL REFERENCES TerrorLocation (LID),
@@ -116,13 +115,13 @@ CREATE TABLE TerrorEvent (
 );
 
 CREATE TABLE TerrorRelation (
-  RID INTEGER AUTO_INCREMENT PRIMARY KEY,
+  RID INTEGER PRIMARY KEY,
   EID BIGINT NOT NULL REFERENCES TerrorEvent (EID),
   related BIGINT NOT NULL REFERENCES TerrorEvent (EID)
 );
 
 CREATE TABLE TerrorLocation (
-  LID INTEGER AUTO_INCREMENT PRIMARY KEY,
+  LID INTEGER PRIMARY KEY,
   countryID INTEGER,
   country VARCHAR(50) NOT NULL REFERENCES Country (countryName),
   regionID INTEGER,
@@ -154,33 +153,10 @@ CREATE TABLE TerrorTarget (
   nationality VARCHAR(50)
 );
 
--- types are same
--- subtypes are same
--- maybe make weaponType table with types and subtypes
--- and the make weaponUsage table to link
 CREATE TABLE TerrorWeapon (
   WID INTEGER AUTO_INCREMENT PRIMARY KEY,
-  weaptypeID INTEGER,
-  weaptype VARCHAR(100),
-  weapsubtypeID INTEGER,
-  weapsubtype VARCHAR(100)
-);
-
-
-CREATE TABLE TerrorAttackRelation (
-  ARID INTEGER AUTO_INCREMENT PRIMARY KEY,
-  AID INTEGER NOT NULL REFERENCES TerrorAttack (AID),
-  EID BIGINT NOT NULL REFERENCES TerrorEvent (EID)
-);
-
-CREATE TABLE TerrorTargetRelation (
-  TRID INTEGER AUTO_INCREMENT PRIMARY KEY,
-  TID INTEGER NOT NULL REFERENCES TerrorTarget (TID),
-  EID BIGINT NOT NULL REFERENCES TerrorEvent (EID)
-);
-
-CREATE TABLE TerrorWeaponRelation (
-  WRID INTEGER AUTO_INCREMENT PRIMARY KEY,
-  WID INTEGER NOT NULL REFERENCES TerrorWeapon (WID),
-  EID BIGINT NOT NULL REFERENCES TerrorEvent (EID)
+  weapTypeID INTEGER,
+  weapType VARCHAR(100),
+  weapSubtypeID INTEGER,
+  weapSubtype VARCHAR(100)
 );
