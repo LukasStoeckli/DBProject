@@ -10,7 +10,7 @@ startTime <- proc.time()
 
 # read and clean metal file
 cat("Reading file...\n")
-file = "/Users/Lukas/unibas/sem5/databases/project/datasets/metal-bands-by-nation/metal_bands_2017.csv"
+file = "./../data/raw/metal_bands_2017.csv"
 rawData <- read.csv(file, header= TRUE, sep = ",", quote = "\"")
 # adapt colnames to db
 colnames(rawData) <- sub("band_name", "bandName", colnames(rawData))
