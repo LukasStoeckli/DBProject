@@ -48,3 +48,9 @@ for (line in 1:rows) {
 styleData <- data.frame(SID = 1:nrow(styleData), styleData)
 # save frame
 write.csv(styleData, file="../data/frames/metalStyle.csv", row.names=FALSE)
+
+
+
+endTime <- proc.time()
+elapsedTime <- getTime(startTime, endTime)
+cat("Finished metal data entity creation in ", elapsedTime,"\n")

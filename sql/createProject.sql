@@ -2,7 +2,7 @@ CREATE TABLE MetalBand (
   bandName VARCHAR(100) PRIMARY KEY,
   fans INTEGER,
   formed INTEGER(4) NOT NULL,
-  origin VARCHAR(50) NOT NULL REFERENCES Country (countryName),
+  origin VARCHAR(50) NOT NULL REFERENCES Country (country),
   split INTEGER(4)
 );
 
@@ -13,13 +13,13 @@ CREATE TABLE MetalStyle (
 );
 
 CREATE TABLE Country (
-  countryName VARCHAR(50) PRIMARY KEY,
+  country VARCHAR(50) PRIMARY KEY,
   area FLOAT NOT NULL
 );
 
 CREATE TABLE Population (
   PID INTEGER AUTO_INCREMENT PRIMARY KEY,
-  countryName VARCHAR(50) NOT NULL REFERENCES Country (countryName),
+  country VARCHAR(50) NOT NULL REFERENCES Country (country),
   year INTEGER(4) NOT NULL,
   population INTEGER NOT NULL
 );
