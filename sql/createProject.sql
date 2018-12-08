@@ -26,11 +26,12 @@ CREATE TABLE Population (
 
 
 CREATE TABLE Weather (
-  WID INTEGER AUTO_INCREMENT PRIMARY KEY,
+  -- WID INTEGER AUTO_INCREMENT PRIMARY KEY,
   weatherDate DATE NOT NULL,
   LID INTEGER NOT NULL REFERENCES TerrorLocation (LID),
-  temperature FLOAT NOT NULL,
-  type VARCHAR(30) NOT NULL
+  -- temperature FLOAT NOT NULL,
+  rain VARCHAR(30) NOT NULL,
+  PRIMARY KEY (weatherDate, LID)
   -- wind -- format?
 );
 
@@ -41,7 +42,7 @@ CREATE TABLE TerrorEvent (
   approxDate VARCHAR(50),
   extended BOOLEAN NOT NULL,
   resolution DATE,
-  tLocation INTEGER NOT NULL REFERENCES TerrorLocation (LID),
+  LID INTEGER NOT NULL REFERENCES TerrorLocation (LID),
   summary TEXT,
   crit1 BOOLEAN,
   crit2 BOOLEAN,
@@ -137,12 +138,14 @@ CREATE TABLE TerrorLocation (
 
 CREATE TABLE TerrorAttack (
   AID INTEGER AUTO_INCREMENT PRIMARY KEY,
+  EID BIGINT NOT NULL REFERENCES TerrorEvent (EID),
   attackTypeID INTEGER,
   attackType VARCHAR(50)
 );
 
 CREATE TABLE TerrorTarget (
   TID INTEGER AUTO_INCREMENT PRIMARY KEY,
+  EID BIGINT NOT NULL REFERENCES TerrorEvent (EID),
   targTypeID INTEGER,
   targType VARCHAR(100),
   targSubtypeID INTEGER,
@@ -155,6 +158,7 @@ CREATE TABLE TerrorTarget (
 
 CREATE TABLE TerrorWeapon (
   WID INTEGER AUTO_INCREMENT PRIMARY KEY,
+  EID BIGINT NOT NULL REFERENCES TerrorEvent (EID),
   weapTypeID INTEGER,
   weapType VARCHAR(100),
   weapSubtypeID INTEGER,
