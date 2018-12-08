@@ -19,8 +19,16 @@ Weather Data    | https://www1.ncdc.noaa.gov/pub/data/ghcn/daily/ghcnd\_all.tar.
 
 
 ### Getting started ###
-* (install R language, uncomment first line in *./src/DataImport.R*)
-* place data files in *./data/raw/*
-* run *$Rsrcipt TerrorFrames.R* in *./src/*
-* as this takes a while (bit more than an hour), set up the db with *./sql/createProject.sql*
-* run *$Rscript DataImport.R* in *./src/*
+* R
+  * R script interpreter required
+  * library *digest* required (uncomment first line in *./src/TerrorFrames.R*)
+* data
+  * create *./data/raw/* and *./data/frames/*
+  * place raw data files in *./data/raw/*
+* in *./src/* run
+  * *$Rscript TerrorFrames.R*
+  * *$Rscript MetalFrames.R*
+  * *$Rscript PopulationFrames.R*
+  * or place existing frames in *./data/frames/*
+* set up db with *./sql/createProject.sql*
+* in *.src/* run *$Rscript DataImport.R*

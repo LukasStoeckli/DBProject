@@ -2,8 +2,8 @@ CREATE TABLE MetalBand (
   bandName VARCHAR(100) PRIMARY KEY,
   fans INTEGER,
   formed INTEGER(4) NOT NULL,
-  split INTEGER(4),
-  origin VARCHAR(50) NOT NULL REFERENCES Country (countryName)
+  origin VARCHAR(50) NOT NULL REFERENCES Country (countryName),
+  split INTEGER(4)
 );
 
 CREATE TABLE MetalStyle (
