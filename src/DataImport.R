@@ -56,6 +56,7 @@ locationFile <- "../data/frames/terrorLocation.csv"
 relationFile <- "../data/frames/terrorRelation.csv"
 targetFile <- "../data/frames/terrorTarget.csv"
 weaponFile <- "../data/frames/terrorWeapon.csv"
+weatherFile <- "../data/frames/weather.csv"
 
 country <- read.csv(countryFile, header= TRUE, sep = ",")
 metalBand <- read.csv(metalFile, header= TRUE, sep = ",")
@@ -67,6 +68,7 @@ terrorLocation <- read.csv(locationFile, header= TRUE, sep = ",")
 terrorRelation <- read.csv(relationFile, header= TRUE, sep = ",")
 terrorTarget <- read.csv(targetFile, header= TRUE, sep = ",")
 terrorWeapon <- read.csv(weaponFile, header= TRUE, sep = ",")
+weather <- read.csv(weatherFile, header= TRUE, sep = ",")
 
 
 
@@ -89,7 +91,7 @@ dbWriteTable(con, "TerrorLocation", terrorLocation, append = TRUE, row.names = F
 dbWriteTable(con, "TerrorRelation", terrorRelation, append = TRUE, row.names = FALSE)
 dbWriteTable(con, "TerrorTarget", terrorTarget, append = TRUE, row.names = FALSE)
 dbWriteTable(con, "TerrorWeapon", terrorWeapon, append = TRUE, row.names = FALSE)
-
+dbWriteTable(con, "Weather", weather, append = TRUE, row.names = FALSE)
 
 
 
