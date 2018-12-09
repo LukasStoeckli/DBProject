@@ -161,3 +161,15 @@ CREATE TABLE TerrorWeapon (
   weapSubtypeID INTEGER,
   weapSubtype VARCHAR(100)
 );
+
+CREATE INDEX MetalOriginIdx ON MetalBand (origin);
+CREATE INDEX MetalBandIdx ON MetalStyle (bandName);
+CREATE INDEX PopulationCountryIdx ON Population (country);
+CREATE INDEX WeatherLocationIdx ON Weather (LID);
+CREATE INDEX EventLocationIdx ON TerrorEvent (LID);
+CREATE INDEX RelationEventIdx ON TerrorRelation (EID);
+CREATE INDEX RelationRelatedIdx ON TerrorRelation (related);
+CREATE INDEX LocationCountryIdx ON TerrorLocation (country);
+CREATE INDEX AttackEventIdx ON TerrorAttack (EID);
+CREATE INDEX TargetEventIdx ON TerrorTarget (EID);
+CREATE INDEX WeaponEventIdx ON TerrorWeapon (EID);
