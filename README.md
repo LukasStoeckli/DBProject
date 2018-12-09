@@ -29,6 +29,7 @@ Weather Data    | https://www1.ncdc.noaa.gov/pub/data/ghcn/daily/ghcnd\_all.tar.
   * *$Rscript TerrorFrames.R*
   * *$Rscript MetalFrames.R*
   * *$Rscript CountryFrames.R*
+  * *$Rscript WeatherFrames.R*
   * or place existing frames in *./data/frames/*
 * set up db with *./sql/createProject.sql*
 * in *./src/* run *$Rscript DataImport.R*
