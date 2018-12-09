@@ -24,17 +24,14 @@ CREATE TABLE Population (
   population INTEGER NOT NULL
 );
 
-
 CREATE TABLE Weather (
-  -- WID INTEGER AUTO_INCREMENT PRIMARY KEY,
-  weatherDate DATE NOT NULL,
   LID INTEGER NOT NULL REFERENCES TerrorLocation (LID),
-  -- temperature FLOAT NOT NULL,
-  rain VARCHAR(30) NOT NULL,
-  PRIMARY KEY (weatherDate, LID)
-  -- wind -- format?
+  weatherDate DATE NOT NULL,
+  PRIMARY KEY (weatherDate, LID),
+  rain INTEGER,
+  temperature INTEGER,
+  station VARCHAR(11)
 );
-
 
 CREATE TABLE TerrorEvent (
   EID BIGINT PRIMARY KEY,
