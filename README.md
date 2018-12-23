@@ -32,4 +32,4 @@ Weather Data    | https://www1.ncdc.noaa.gov/pub/data/ghcn/daily/ghcnd\_all.tar.
   * *$Rscript WeatherFrames.R*
   * or place existing frames in *./data/frames/*
 * set up db with *./sql/createProject.sql*
-* in *./src/* run *$Rscript DataImport.R*
+* in *./src/* run *$Rscript DataImport.py*

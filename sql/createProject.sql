@@ -13,8 +13,7 @@ CREATE TABLE MetalStyle (
 );
 
 CREATE TABLE Country (
-  country VARCHAR(50) PRIMARY KEY,
-  area FLOAT NOT NULL
+  country VARCHAR(50) PRIMARY KEY
 );
 
 CREATE TABLE Population (
