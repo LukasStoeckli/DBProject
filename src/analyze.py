@@ -29,10 +29,10 @@ def plot2(a, b, title, xLabel, yLabel1, ylabel2, pdfName):
         plt.ylabel(ylabel2, color='r')
         plt.tick_params('y', colors='r')
 
-        plt.savefig(pdfName+".pdf")
+        plt.savefig("../data/results/"+pdfName+".pdf")
         plt.show()
     except Exception, e:
-        with open('error.log', 'a') as errorLog:
+        with open('../logs/analysis.log', 'a') as errorLog:
             errorLog.write("PLOT " + str(e) + '\n')
 
 
@@ -51,7 +51,7 @@ def weatherVsTerrorism(cursor):
 
         print "[+] Weather vs Terrorism"
     except Exception, e:
-        with open('error.log', 'a') as errorLog:
+        with open('../logs/analysis.log', 'a') as errorLog:
             errorLog.write("WEATHERTERRORISM " + str(e) + '\n')
 
 
@@ -81,7 +81,7 @@ def attacksVsPopulation(cursor):
 
         print "[+] Attacks vs Population"
     except Exception, e:
-        with open('error.log', 'a') as errorLog:
+        with open('../logs/analysis.log', 'a') as errorLog:
             errorLog.write("ATTACKPOPULATION " + str(e) + '\n')
 
 
@@ -123,7 +123,7 @@ def genreVsTerrorism(cursor):
 
         print "[+] Genre vs Terrorism"
     except Exception, e:
-        with open('error.log', 'a') as errorLog:
+        with open('../logs/analysis.log', 'a') as errorLog:
             errorLog.write("GENRETERRORISM " + str(e) + '\n')
 
 
@@ -169,7 +169,7 @@ def populationVsBands(cursor):
 
         print "[+] Population vs bands"
     except Exception, e:
-        with open('error.log', 'a') as errorLog:
+        with open('../logs/analysis.log', 'a') as errorLog:
             errorLog.write("ATTACKBAND " + str(e) + '\n')
 
 
@@ -220,7 +220,7 @@ def attacksVsBands(cursor):
 
         print "[+] Terror attacks per year vs metal bands" % (title)
     except Exception, e:
-        with open('error.log', 'a') as errorLog:
+        with open('../logs/analysis.log', 'a') as errorLog:
             errorLog.write("ATTACKBAND " + str(e) + '\n')
 
 
@@ -269,7 +269,7 @@ def getMapData(cursor):
 
         print "[+] Map data"
     except Exception, e:
-        with open('error.log', 'a') as errorLog:
+        with open('../logs/analysis.log', 'a') as errorLog:
             errorLog.write("MAPDATA " + str(e) + '\n')
 
 #-------------------------------------------------------
@@ -287,7 +287,7 @@ def main():
         cursor = db.cursor()
     except Exception, e:
         print '[-] failed to connect to db'
-        with open('../logs/error.log', 'a') as errorLog:
+        with open('../logs/../logs/analysis.log', 'a') as errorLog:
             errorLog.write("CONNECT " + str(e) + '\n')
             return
 
@@ -296,7 +296,7 @@ def main():
     #attacksVsPopulation(cursor) # done
     genreVsTerrorism(cursor)
     #populationVsBands(cursor) # done
-    #attacksVsBands(cursor) # done
+    attacksVsBands(cursor) # done
 
 
     #getMapData(cursor)
