@@ -39,6 +39,24 @@ def plot2(a, b, title, xLabel, yLabel1, ylabel2, pdfName):
 
 
 #---------------------------
+# (1) WEATHER VS TERRORISM
+#---------------------------
+def weatherVsTerrorism(cursor):
+    try:
+        query = ""
+        data = getData(cursor, query)
+
+
+
+
+        print "[+] Weather vs Terrorism"
+    except Exception, e:
+        with open('error.log', 'a') as errorLog:
+            errorLog.write("WEATHERTERRORISM " + str(e) + '\n')
+
+
+
+#---------------------------
 # (2) ATTACKS VS POPULATION
 #---------------------------
 def attacksVsPopulation(cursor):
@@ -54,14 +72,12 @@ def attacksVsPopulation(cursor):
             query = "SELECT year, population FROM Population WHERE country = '%s'" %  (nation[0])
             populationData = getData(cursor, query)
 
-
             title = "Terror attacks vs population in %s" % (nation[0])
             xLabel = "year"
             yLabel1 = "terror attacks"
             ylabel2 = "population"
             pdfName = "attackVsPopulation{}".format(nation[0])
             plot2(attackData, populationData, title, xLabel, yLabel1, ylabel2, pdfName)
-
 
         print "[+] Attacks vs Population"
     except Exception, e:
@@ -129,10 +145,6 @@ def populationVsBands(cursor):
 
             query = "SELECT split AS year, COUNT(split) AS cnt FROM MetalBand WHERE origin = '%s' GROUP BY split ORDER BY split" % (nation[0])
             splitData = getData(cursor, query)
-
-
-            print "%s %s %s %s" % (nation[0], np.shape(formedData), np.shape(splitData), np.shape(populationData))
-
 
             # mean of formed and split
             bandData = []
@@ -280,6 +292,7 @@ def main():
             return
 
 
+    #weatherVsTerrorism(cursor)
     #attacksVsPopulation(cursor) # done
     genreVsTerrorism(cursor)
     #populationVsBands(cursor) # done
