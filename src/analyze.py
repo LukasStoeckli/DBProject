@@ -30,6 +30,7 @@ def plot2(a, b, title, xLabel, yLabel1, ylabel2, pdfName):
         plt.tick_params('y', colors='r')
 
         plt.savefig("../data/results/"+pdfName+".pdf")
+        plt.clear()
         plt.show()
     except Exception, e:
         with open('../logs/analysis.log', 'a') as errorLog:
@@ -287,7 +288,7 @@ def main():
         cursor = db.cursor()
     except Exception, e:
         print '[-] failed to connect to db'
-        with open('../logs/../logs/analysis.log', 'a') as errorLog:
+        with open('../logs/analysis.log', 'a') as errorLog:
             errorLog.write("CONNECT " + str(e) + '\n')
             return
 
@@ -296,7 +297,7 @@ def main():
     #attacksVsPopulation(cursor) # done
     genreVsTerrorism(cursor)
     #populationVsBands(cursor) # done
-    attacksVsBands(cursor) # done
+    #attacksVsBands(cursor) # done
 
 
     #getMapData(cursor)
