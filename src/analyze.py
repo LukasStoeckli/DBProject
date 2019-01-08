@@ -30,8 +30,8 @@ def plot2(a, b, title, xLabel, yLabel1, ylabel2, pdfName):
         plt.tick_params('y', colors='r')
 
         plt.savefig("../data/results/"+pdfName+".pdf")
-        plt.clear()
-        plt.show()
+        #plt.show()
+        plt.close()
     except Exception, e:
         with open('../logs/analysis.log', 'a') as errorLog:
             errorLog.write("PLOT " + str(e) + '\n')
@@ -283,7 +283,7 @@ def main():
         # db setup
         db = mysql.connector.connect(user='dbProject',
                                      password='db2018',
-                                     host='127.0.0.1',
+                                     host='n1yd5rann1iy3jwo.myfritz.net',
                                      database='dbProject')
         cursor = db.cursor()
     except Exception, e:
@@ -295,9 +295,9 @@ def main():
 
     #weatherVsTerrorism(cursor)
     #attacksVsPopulation(cursor) # done
-    genreVsTerrorism(cursor)
+    #genreVsTerrorism(cursor)
     #populationVsBands(cursor) # done
-    #attacksVsBands(cursor) # done
+    attacksVsBands(cursor) # done
 
 
     #getMapData(cursor)
