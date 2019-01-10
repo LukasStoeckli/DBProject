@@ -101,7 +101,7 @@ def genreVsTerrorism(cursor):
         plt.barh(yPos, attacks, align='center', color='red')
         plt.yticks(yPos, genres)
         plt.xlabel('attacks')
-        plt.title('Genre vs terrorism')
+        plt.title("Mean number of attacks in a country with the following main genre")
 
         plt.savefig("../data/results/genreVsTerrorism.pdf", bbox_inches='tight')
         plt.close()
