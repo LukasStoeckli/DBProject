@@ -91,36 +91,20 @@ def attacksVsPopulation(cursor):
 #---------------------------
 def genreVsTerrorism(cursor):
     try:
-        query = "SELECT origin FROM MetalBand WHERE origin IN (SELECT country as origin FROM TerrorLocation) GROUP BY origin"
-        countries = getData(cursor, query)
+        query = "SELECT t.genre, FLOOR(SUM(la.attacks)/COUNT(*)) AS attacks FROM ((SELECT country, MAX(cnt) AS MaxVal FROM top30CountryGenres GROUP BY country) AS g JOIN top30CountryGenres AS t ON g.country = t.country AND g.MaxVal = t.cnt JOIN (SELECT COUNT(l.country) AS attacks, l.country FROM TerrorEvent AS t, TerrorLocation AS l WHERE l.country IN (SELECT country FROM top30MetalCountries GROUP BY country) AND t.LID = l.LID GROUP BY l.country ORDER BY country) AS la ON g.country = la.country) GROUP BY t.genre ORDER BY attacks DESC"
+        genreVsAttacks = getData(cursor, query)
 
-        genres = []
-        attacks = []
+        genres = genreVsAttacks[:,0]
+        attacks = genreVsAttacks[:,1]
 
-        for nation in countries:
-            query = "SELECT style FROM MetalStyle WHERE bandName IN (SELECT bandName FROM MetalBand WHERE origin = '%s') GROUP BY style ORDER BY COUNT(style) DESC LIMIT 5" % (nation[0])
-            genre = getData(cursor, query)
-            #genres.append(genre[0][0])
+        yPos = np.arange(len(genres))
+        plt.barh(yPos, attacks, align='center', color='red')
+        plt.yticks(yPos, genres)
+        plt.xlabel('attacks')
+        plt.title('Genre vs terrorism')
 
-            query = "SELECT attackType FROM TerrorAttack WHERE EID IN (SELECT EID FROM TerrorEvent WHERE LID IN (SELECT LID FROM TerrorLocation WHERE country = '%s')) GROUP BY attackType ORDER BY COUNT(attackType) DESC LIMIT 5" % (nation[0])
-            attack = getData(cursor, query)
-            #attacks.append(attack[0][0])
-
-            #query = "" % (nation[0])
-            #target = getData(cursor, query)
-
-            #query = "" % (nation[0])
-            #weapon = getData(cursor, query)
-
-            print "%s\n%s\n\n%s\n---" % (nation[0], genre, attack)
-
-        #genreCount = [[x,genres.count(x)] for x in set(genres)]
-        #genreCount = sorted(genreCount, key=lambda x: x[1], reverse=True)
-        #print genreCount
-
-        #attackCount = [[x,attacks.count(x)] for x in set(attacks)]
-        #attackCount = sorted(attackCount, key=lambda x: x[1], reverse=True)
-        #print attackCount
+        plt.savefig("../data/results/genreVsTerrorism.pdf", bbox_inches='tight')
+        plt.close()
 
         print "[+] Genre vs Terrorism"
     except Exception, e:
@@ -219,7 +203,7 @@ def attacksVsBands(cursor):
         pdfName = "attacksVsBandsExisting"
         plot2(bandData, attackData, title, xLabel, yLabel1, ylabel2, pdfName)
 
-        print "[+] Terror attacks per year vs metal bands" % (title)
+        print "[+] Terror attacks per year vs metal bands"
     except Exception, e:
         with open('../logs/analysis.log', 'a') as errorLog:
             errorLog.write("ATTACKBAND " + str(e) + '\n')
@@ -295,9 +279,9 @@ def main():
 
     #weatherVsTerrorism(cursor)
     #attacksVsPopulation(cursor) # done
-    #genreVsTerrorism(cursor)
+    genreVsTerrorism(cursor) # done
     #populationVsBands(cursor) # done
-    attacksVsBands(cursor) # done
+    #attacksVsBands(cursor) # done
 
 
     #getMapData(cursor)
