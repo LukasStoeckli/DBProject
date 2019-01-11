@@ -14,7 +14,7 @@
 
 \title              {Database Project}
 \author             {Manuel Rickli, Lukas Stöckli}
-\email				{manuel.rickli@unibas.ch, lukas.steockli@unibas.ch}
+\email				{manuel.rickli@unibas.ch, lukas.stoeckli@unibas.ch}
 \institute          {University of Basel}
 
 \date               {11.01.2019}
@@ -44,7 +44,7 @@
 		\rowcolor{hcolor}
 		Datasets \& Schema\\
 		\hline
-		Analasys Goals\\
+		Analysis Goals\\
 		\hline
 		Results\\
 		\hline
@@ -125,7 +125,7 @@
 		Datasets \& Schema\\
 		\hline
 		\rowcolor{hcolor}
-		Analasys Goals\\
+		Analysis Goals\\
 		\hline
 		Results\\
 		\hline
@@ -135,7 +135,13 @@
 
 % ANALYSIS GOALS
 \begin{frame}{Analysis goals}
-	
+	\begin{itemize}
+		\item Are terror events dependent on the weather?
+		\item Do terror attacks influence founding/splitting of metal bands and vice versa?
+		\item Does the population influence the number of existing metal bands?
+		\item Do terror attacks have an influence on the population?
+		\item Which main genre has the most terror events?
+	\end{itemize}
 \end{frame}
 
 
@@ -240,7 +246,7 @@
 \begin{frame}{Results}
 	\begin{itemize}
 		\item 
-		Are terror attacks dependent on the weather?
+		Are attack targets dependent on the weather?
 		\begin{itemize}
 			\item Attack targets - Rain
 		\end{itemize}
@@ -271,7 +277,7 @@
 \begin{frame}{Results}
 	\begin{itemize}
 		\item 
-		Are terror attacks dependent on the weather?
+		Are attack targets dependent on the weather?
 		\begin{itemize}
 			\item Attack targets - Temperature
 		\end{itemize}
@@ -315,7 +321,7 @@
 \begin{frame}{Results}
 	\begin{itemize}
 		\item 
-		Are terror attacks dependent on the weather?
+		Are the used weapons dependent on the weather?
 		\begin{itemize}
 			\item Attack weapons - Rain
 		\end{itemize}
@@ -346,7 +352,7 @@
 \begin{frame}{Results}
 	\begin{itemize}
 		\item 
-		Are terror attacks dependent on the weather?
+		Are the used weapons dependent on the weather?
 		\begin{itemize}
 			\item Attack targets - Temperature
 		\end{itemize}
@@ -478,13 +484,20 @@
 
 % MAP VIDEO
 \begin{frame}{Results}
-	
+\centering
+   \includemovie[
+     poster,
+     autoplay,
+     externalviewer,
+     inline=false,
+     text={\small(Video)}
+   ]{6cm}{6cm}{mapVideo.mp4}
 \end{frame}
 
 
 % QUESTIONS
 \begin{frame}
-	SELECT * FROM Questions WHERE question != 'Why are you?'
+	{\huge Questions?}
 \end{frame}
 
 
