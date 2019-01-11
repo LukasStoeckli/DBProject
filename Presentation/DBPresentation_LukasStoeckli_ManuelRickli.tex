@@ -3,6 +3,7 @@
 \usepackage{graphicx}
 \usepackage{subcaption}
 \usepackage{animate,media9,movie15}
+\usepackage{listings}
 
 \usepackage[font=small,labelfont=bf]{caption}
 
@@ -36,6 +37,7 @@
 
 \note{Bachelor's thesis presentation}
 
+% CONTENT
 \begin{frame}
 	\begin{tabularx}{\textwidth}{X}
 		\hline
@@ -49,14 +51,74 @@
 	\end{tabularx}
 \end{frame}
 
-\begin{frame}
-	Datasets:
+
+% DATASETS
+\begin{frame}{Datasets:}
 	\begin{itemize}
-		\item 
+		\item Global Terrorism 1970 - 2017
+		\begin{itemize}
+			\item Dimensions: 181'691 rows x 135 columns
+			\item Size: 162.8 MB
+		\end{itemize}
+		\item Metal bands 1964 - 2016
+		\begin{itemize}
+			\item Dimensions: 5000 rows x 7 columns
+			\item Size: 264 KB
+		\end{itemize}
+		\item World Population 1960 - 2015
+		\begin{itemize}
+			\item Dimensions: 264 rows x 57 columns
+			\item Size: 125 KB
+		\end{itemize}
+		\item Weather Data
+		\begin{itemize}
+			\item Inventory
+			\begin{itemize}
+			  \item Dimensions: 65236 rows x 6 columns
+			  \item Size: 26.9 MB
+		    \end{itemize}
+			\item Daily
+			\begin{itemize}
+			  \item Dimensions: $\sim$10M rows x 35 columns
+			  \item Size: 2.9 GB
+		    \end{itemize}
+		\end{itemize}
 	\end{itemize}
-
 \end{frame}
 
+
+% SINGLE SOURCES
+\begin{frame}{Single sources}
+	\begin{figure}
+		\begin{subfigure}[b]{0.315\textwidth}
+			\includegraphics[width=\textwidth]{ER/g2-country.jpg}
+		\end{subfigure}
+		\begin{subfigure}[b]{0.315\textwidth}
+			\includegraphics[width=\textwidth]{ER/g2-metal.jpg}
+		\end{subfigure}
+		\begin{subfigure}[b]{0.315\textwidth}
+			\includegraphics[width=\textwidth]{ER/g2-terror.jpg}
+		\end{subfigure}
+	\end{figure}
+	\begin{figure}
+		\begin{subfigure}[b]{0.7\textwidth}
+			\includegraphics[width=\textwidth]{ER/g2-weather.jpg}
+		\end{subfigure}
+	\end{figure}
+\end{frame}
+
+
+% INTEGRATED SCHEMA
+\begin{frame}{Integrated schema}
+	\begin{figure}
+		\begin{subfigure}[b]{\textwidth}
+			\includegraphics[width=\textwidth]{ER/g2-integratedSchema.jpg}
+		\end{subfigure}
+	\end{figure}
+\end{frame}
+
+
+% CONTENT
 \begin{frame}
 	\begin{tabularx}{\textwidth}{X}
 		\hline
@@ -70,6 +132,14 @@
 	\end{tabularx}
 \end{frame}
 
+
+% ANALYSIS GOALS
+\begin{frame}{Analysis goals}
+	
+\end{frame}
+
+
+% CONTENT
 \begin{frame}
 	\begin{tabularx}{\textwidth}{X}
 		\hline
@@ -81,18 +151,6 @@
 		Results\\
 		\hline
 	\end{tabularx}
-\end{frame}
-
-\begin{frame}{Results}
-	\begin{itemize}
-		\item 
-		Are terror attacks dependent on the weather?
-		\begin{itemize}
-			\item Attack types - Weather
-			\item Attack targets - Weather
-			\item Attack weapons - Weather
-		\end{itemize}
-	\end{itemize}
 \end{frame}
 
 \begin{frame}{Results}
@@ -390,6 +448,7 @@
 	\end{figure}
 \end{frame}
 
+
 \begin{frame}{Results}
 	Do terror attacks have an influence on the population?
 	
@@ -407,6 +466,26 @@
 \end{frame}
 
 
+% MAP SCREENSHOT
+\begin{frame}{Results}
+	\begin{figure}
+		\begin{subfigure}[b]{\textwidth}
+			\includegraphics[width=\textwidth]{911.png}
+		\end{subfigure}
+	\end{figure}
+\end{frame}
+
+
+% MAP VIDEO
+\begin{frame}{Results}
+	
+\end{frame}
+
+
+% QUESTIONS
+\begin{frame}
+	SELECT * FROM Questions WHERE question != 'Why are you?'
+\end{frame}
 
 
 \end{document}
