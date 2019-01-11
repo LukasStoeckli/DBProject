@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.18)  11 JAN 2019 01:45
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.18)  11 JAN 2019 01:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1734,20 +1734,20 @@ File: english.lbx 2017/12/19 v3.10 biblatex localization (PK/JW/AB)
 (./DBPresentation_LukasStoeckli_ManuelRickli.aux)
 \openout1 = `DBPresentation_LukasStoeckli_ManuelRickli.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1815,7 +1815,7 @@ e
 ))
 ABD: EveryShipout initializing macros
 \AtBeginShipoutBox=\box88
-Package hyperref Info: Link coloring OFF on input line 47.
+Package hyperref Info: Link coloring OFF on input line 32.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -1825,9 +1825,9 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count504
 )
-LaTeX Info: Redefining \ref on input line 47.
-LaTeX Info: Redefining \pageref on input line 47.
-LaTeX Info: Redefining \nameref on input line 47.
+LaTeX Info: Redefining \ref on input line 32.
+LaTeX Info: Redefining \pageref on input line 32.
+LaTeX Info: Redefining \nameref on input line 32.
 
 (./DBPresentation_LukasStoeckli_ManuelRickli.out)
 (./DBPresentation_LukasStoeckli_ManuelRickli.out)
@@ -1835,57 +1835,57 @@ LaTeX Info: Redefining \nameref on input line 47.
 \openout7 = `DBPresentation_LukasStoeckli_ManuelRickli.out'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 47.
+(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 32.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 47.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 32.
 \symnumbers=\mathgroup6
 \sympureletters=\mathgroup7
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/cmr/m/n on input line 47.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 47.
+(Font)                  OT1/cmss/m/n --> OT1/cmr/m/n on input line 32.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 32.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 47.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 32.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 47.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 47.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 32.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 32.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/m/n on input line 47.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/m/n on input line 32.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/cmss/m/n on input line 47.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 47.
+(Font)                  OT1/cmss/bx/n --> OT1/cmss/m/n on input line 32.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 32.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> OT1/cmss/m/it on input line 47.
+(Font)                  OT1/cmr/m/it --> OT1/cmss/m/it on input line 32.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> OT1/cmss/m/it on input line 47.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 47.
+(Font)                  OT1/cmr/bx/it --> OT1/cmss/m/it on input line 32.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 32.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 47.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 32.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 47.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 32.
 LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/bx/n on input line 47.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/bx/n on input line 32.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  OT1/cmss/m/it --> OT1/cmss/bx/it on input line 47.
+(Font)                  OT1/cmss/m/it --> OT1/cmss/bx/it on input line 32.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/cmr/bx/n on input line 47.
+(Font)                  OT1/cmss/bx/n --> OT1/cmr/bx/n on input line 32.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/cmss/bx/n on input line 47.
+(Font)                  OT1/cmss/bx/n --> OT1/cmss/bx/n on input line 32.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/bx/n on input line 47.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/bx/n on input line 32.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmss/m/it --> OT1/cmss/bx/it on input line 47.
+(Font)                  OT1/cmss/m/it --> OT1/cmss/bx/it on input line 32.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/bx/n on input line 47.
-LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 47.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/bx/n on input line 32.
+LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 32.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `normal'
-(Font)                  OT1/cmss/m/it --> OT1/mathkerncmss/m/sl on input line 4
-7.
+(Font)                  OT1/cmss/m/it --> OT1/mathkerncmss/m/sl on input line 3
+2.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
 (Font)                  OT1/cmss/bx/it --> OT1/mathkerncmss/m/sl on input line 
-47.
+32.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
 (Font)                  OT1/mathkerncmss/m/sl --> OT1/mathkerncmss/bx/sl on inp
-ut line 47.
+ut line 32.
 
 (/usr/share/texlive/texmf-dist/tex/latex/translator/translator-basic-dictionary
 -English.dict
@@ -1911,7 +1911,7 @@ Dictionary: translator-numbers-dictionary, Language: English
 ry-English.dict
 Dictionary: translator-theorem-dictionary, Language: English 
 ) ABD: EverySelectfont initializing macros
-LaTeX Info: Redefining \selectfont on input line 47.
+LaTeX Info: Redefining \selectfont on input line 32.
 \c@lstlisting=\count505
 Package biblatex Info: Input encoding 'utf8' detected.
 Package biblatex Info: Automatic encoding selection.
@@ -1923,24 +1923,24 @@ Package biblatex Info: ... file 'DBPresentation_LukasStoeckli_ManuelRickli.bbl'
  not found.
 
 No file DBPresentation_LukasStoeckli_ManuelRickli.bbl.
-Package biblatex Info: Reference section=0 on input line 47.
-Package biblatex Info: Reference segment=0 on input line 47.
+Package biblatex Info: Reference section=0 on input line 32.
+Package biblatex Info: Reference segment=0 on input line 32.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
 (./DBPresentation_LukasStoeckli_ManuelRickli.nav)
 <Template/header.pdf, id=14, 113.8112pt x 36.98878pt>
 File: Template/header.pdf Graphic file (type pdf)
 <use Template/header.pdf>
-Package pdftex.def Info: Template/header.pdf  used on input line 50.
+Package pdftex.def Info: Template/header.pdf  used on input line 35.
 (pdftex.def)             Requested size: 74.87074pt x 24.33327pt.
-LaTeX Font Info:    Try loading font information for OML+cmss on input line 50.
+LaTeX Font Info:    Try loading font information for OML+cmss on input line 35.
 
-LaTeX Font Info:    No file OMLcmss.fd. on input line 50.
+LaTeX Font Info:    No file OMLcmss.fd. on input line 35.
 
 
 LaTeX Font Warning: Font shape `OML/cmss/m/n' undefined
 (Font)              using `OML/cmm/m/it' instead
-(Font)              for symbol `textless' on input line 50.
+(Font)              for symbol `textless' on input line 35.
 
 [1
 
@@ -1950,83 +1950,90 @@ LaTeX Font Warning: Font shape `OML/cmss/m/n' undefined
 (/usr/share/texlive/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd)
 [2
 
-] [3
-
-] [4
-
 ]
-<Template/listelement.pdf, id=63, 257.96375pt x 526.96875pt>
+<Template/listelement.pdf, id=51, 257.96375pt x 526.96875pt>
 File: Template/listelement.pdf Graphic file (type pdf)
 <use Template/listelement.pdf>
-Package pdftex.def Info: Template/listelement.pdf  used on input line 103.
+Package pdftex.def Info: Template/listelement.pdf  used on input line 58.
+(pdftex.def)             Requested size: 3.4796pt x 7.11113pt.
+ [3
+
+ <./Template/listelement.pdf>] [4
+
+] [5
+
+]
+File: Template/listelement.pdf Graphic file (type pdf)
+<use Template/listelement.pdf>
+Package pdftex.def Info: Template/listelement.pdf  used on input line 96.
 (pdftex.def)             Requested size: 3.4796pt x 7.11113pt.
 File: Template/listelement.pdf Graphic file (type pdf)
 <use Template/listelement.pdf>
-Package pdftex.def Info: Template/listelement.pdf  used on input line 103.
+Package pdftex.def Info: Template/listelement.pdf  used on input line 96.
 (pdftex.def)             Requested size: 2.78288pt x 5.6889pt.
 File: Template/listelement.pdf Graphic file (type pdf)
 <use Template/listelement.pdf>
-Package pdftex.def Info: Template/listelement.pdf  used on input line 103.
+Package pdftex.def Info: Template/listelement.pdf  used on input line 96.
 (pdftex.def)             Requested size: 2.78288pt x 5.6889pt.
 File: Template/listelement.pdf Graphic file (type pdf)
 <use Template/listelement.pdf>
-Package pdftex.def Info: Template/listelement.pdf  used on input line 103.
+Package pdftex.def Info: Template/listelement.pdf  used on input line 96.
 (pdftex.def)             Requested size: 2.78288pt x 5.6889pt.
- [5
+ [6
 
- <./Template/listelement.pdf>]
-<../Output/Rain-Attack/rain11-5_starDiagram.pdf, id=79, 514.62907pt x 343.21567
+]
+<../Output/Rain-Attack/rain11-5_starDiagram.pdf, id=85, 514.62907pt x 343.21567
 pt>
 File: ../Output/Rain-Attack/rain11-5_starDiagram.pdf Graphic file (type pdf)
 <use ../Output/Rain-Attack/rain11-5_starDiagram.pdf>
 Package pdftex.def Info: ../Output/Rain-Attack/rain11-5_starDiagram.pdf  used o
-n input line 112.
+n input line 105.
 (pdftex.def)             Requested size: 256.39594pt x 170.99467pt.
- [6
+ [7
 
  <../Output/Rain-Attack/rain11-5_starDiagram.pdf>]
 File: Template/listelement.pdf Graphic file (type pdf)
 <use Template/listelement.pdf>
-Package pdftex.def Info: Template/listelement.pdf  used on input line 143.
+Package pdftex.def Info: Template/listelement.pdf  used on input line 136.
 (pdftex.def)             Requested size: 3.4796pt x 7.11113pt.
 File: Template/listelement.pdf Graphic file (type pdf)
 <use Template/listelement.pdf>
-Package pdftex.def Info: Template/listelement.pdf  used on input line 143.
+Package pdftex.def Info: Template/listelement.pdf  used on input line 136.
 (pdftex.def)             Requested size: 2.78288pt x 5.6889pt.
-<../Output/Rain-Attack/rain0_starDiagram.pdf, id=139, 514.5781pt x 343.21725pt>
+<../Output/Rain-Attack/rain0_starDiagram.pdf, id=146, 514.5781pt x 343.21725pt>
 
 File: ../Output/Rain-Attack/rain0_starDiagram.pdf Graphic file (type pdf)
 <use ../Output/Rain-Attack/rain0_starDiagram.pdf>
 Package pdftex.def Info: ../Output/Rain-Attack/rain0_starDiagram.pdf  used on i
-nput line 143.
+nput line 136.
 (pdftex.def)             Requested size: 96.14908pt x 64.12787pt.
-<../Output/Rain-Attack/rain01-1_starDiagram.pdf, id=140, 514.63287pt x 343.2488
+<../Output/Rain-Attack/rain01-1_starDiagram.pdf, id=147, 514.63287pt x 343.2488
 7pt>
 File: ../Output/Rain-Attack/rain01-1_starDiagram.pdf Graphic file (type pdf)
 <use ../Output/Rain-Attack/rain01-1_starDiagram.pdf>
 Package pdftex.def Info: ../Output/Rain-Attack/rain01-1_starDiagram.pdf  used o
-n input line 143.
+n input line 136.
 (pdftex.def)             Requested size: 96.14908pt x 64.12854pt.
 File: ../Output/Rain-Attack/rain11-5_starDiagram.pdf Graphic file (type pdf)
 <use ../Output/Rain-Attack/rain11-5_starDiagram.pdf>
 Package pdftex.def Info: ../Output/Rain-Attack/rain11-5_starDiagram.pdf  used o
-n input line 143.
+n input line 136.
 (pdftex.def)             Requested size: 96.14908pt x 64.12234pt.
-<../Output/Rain-Attack/rain51-20_starDiagram.pdf, id=141, 514.59323pt x 343.217
+<../Output/Rain-Attack/rain51-20_starDiagram.pdf, id=148, 514.59323pt x 343.217
 35pt>
 File: ../Output/Rain-Attack/rain51-20_starDiagram.pdf Graphic file (type pdf)
 <use ../Output/Rain-Attack/rain51-20_starDiagram.pdf>
 Package pdftex.def Info: ../Output/Rain-Attack/rain51-20_starDiagram.pdf  used 
-on input line 143.
+on input line 136.
 (pdftex.def)             Requested size: 96.14908pt x 64.12788pt.
-<../Output/Rain-Attack/rain>201_starDiagram.pdf, id=142, 514.70032pt x 343.2172
+<../Output/Rain-Attack/rain>201_starDiagram.pdf, id=149, 514.70032pt x 343.2172
 5pt>
 File: ../Output/Rain-Attack/rain>201_starDiagram.pdf Graphic file (type pdf)
 <use ../Output/Rain-Attack/rain>201_starDiagram.pdf>
 Package pdftex.def Info: ../Output/Rain-Attack/rain>201_starDiagram.pdf  used o
-n input line 143.
+n input line 136.
 (pdftex.def)             Requested size: 96.14908pt x 64.11217pt.
- [7
+ [8
 
  <../Output/Rain-Attack/rain0_starDiagram.pdf> <../Output/Rain-Attack/rain01-1_
 starDiagram.pdf
@@ -2044,57 +2051,57 @@ pdfTeX warning: pdflatex (file ../Output/Rain-Attack/rain>201_starDiagram.pdf):
 >]
 File: Template/listelement.pdf Graphic file (type pdf)
 <use Template/listelement.pdf>
-Package pdftex.def Info: Template/listelement.pdf  used on input line 178.
+Package pdftex.def Info: Template/listelement.pdf  used on input line 171.
 (pdftex.def)             Requested size: 3.4796pt x 7.11113pt.
 File: Template/listelement.pdf Graphic file (type pdf)
 <use Template/listelement.pdf>
-Package pdftex.def Info: Template/listelement.pdf  used on input line 178.
+Package pdftex.def Info: Template/listelement.pdf  used on input line 171.
 (pdftex.def)             Requested size: 2.78288pt x 5.6889pt.
-<../Output/Temp-Attack/temp<-100_starDiagram.pdf, id=351, 465.14516pt x 341.814
+<../Output/Temp-Attack/temp<-100_starDiagram.pdf, id=357, 465.14516pt x 341.814
 71pt>
 File: ../Output/Temp-Attack/temp<-100_starDiagram.pdf Graphic file (type pdf)
 <use ../Output/Temp-Attack/temp<-100_starDiagram.pdf>
 Package pdftex.def Info: ../Output/Temp-Attack/temp<-100_starDiagram.pdf  used 
-on input line 178.
+on input line 171.
 (pdftex.def)             Requested size: 96.14908pt x 70.6514pt.
-<../Output/Temp-Attack/temp-101-0_starDiagram.pdf, id=352, 514.6053pt x 343.545
+<../Output/Temp-Attack/temp-101-0_starDiagram.pdf, id=358, 514.6053pt x 343.545
 6pt>
 File: ../Output/Temp-Attack/temp-101-0_starDiagram.pdf Graphic file (type pdf)
 <use ../Output/Temp-Attack/temp-101-0_starDiagram.pdf>
 Package pdftex.def Info: ../Output/Temp-Attack/temp-101-0_starDiagram.pdf  used
- on input line 178.
+ on input line 171.
 (pdftex.def)             Requested size: 96.14908pt x 64.18398pt.
-<../Output/Temp-Attack/temp1-100_starDiagram.pdf, id=353, 514.0628pt x 343.4590
+<../Output/Temp-Attack/temp1-100_starDiagram.pdf, id=359, 514.0628pt x 343.4590
 6pt>
 File: ../Output/Temp-Attack/temp1-100_starDiagram.pdf Graphic file (type pdf)
 <use ../Output/Temp-Attack/temp1-100_starDiagram.pdf>
 Package pdftex.def Info: ../Output/Temp-Attack/temp1-100_starDiagram.pdf  used 
-on input line 178.
+on input line 171.
 (pdftex.def)             Requested size: 96.14908pt x 64.23595pt.
-<../Output/Temp-Attack/temp101-200_starDiagram.pdf, id=354, 514.02777pt x 343.4
+<../Output/Temp-Attack/temp101-200_starDiagram.pdf, id=360, 514.02777pt x 343.4
 6338pt>
 File: ../Output/Temp-Attack/temp101-200_starDiagram.pdf Graphic file (type pdf)
 
 <use ../Output/Temp-Attack/temp101-200_starDiagram.pdf>
 Package pdftex.def Info: ../Output/Temp-Attack/temp101-200_starDiagram.pdf  use
-d on input line 178.
+d on input line 171.
 (pdftex.def)             Requested size: 96.14908pt x 64.24199pt.
-<../Output/Temp-Attack/temp201-300_starDiagram.pdf, id=355, 514.02592pt x 343.4
+<../Output/Temp-Attack/temp201-300_starDiagram.pdf, id=361, 514.02592pt x 343.4
 6317pt>
 File: ../Output/Temp-Attack/temp201-300_starDiagram.pdf Graphic file (type pdf)
 
 <use ../Output/Temp-Attack/temp201-300_starDiagram.pdf>
 Package pdftex.def Info: ../Output/Temp-Attack/temp201-300_starDiagram.pdf  use
-d on input line 178.
+d on input line 171.
 (pdftex.def)             Requested size: 96.14908pt x 64.24196pt.
-<../Output/Temp-Attack/temp>301_starDiagram.pdf, id=356, 514.03763pt x 343.4631
+<../Output/Temp-Attack/temp>301_starDiagram.pdf, id=362, 514.03763pt x 343.4631
 7pt>
 File: ../Output/Temp-Attack/temp>301_starDiagram.pdf Graphic file (type pdf)
 <use ../Output/Temp-Attack/temp>301_starDiagram.pdf>
 Package pdftex.def Info: ../Output/Temp-Attack/temp>301_starDiagram.pdf  used o
-n input line 178.
+n input line 171.
 (pdftex.def)             Requested size: 96.14908pt x 64.24196pt.
- [8
+ [9
 
  <../Output/Temp-Attack/temp<-100_starDiagram.pdf> <../Output/Temp-Attack/temp-
 101-0_starDiagram.pdf
@@ -2118,57 +2125,57 @@ f): PDF inclusion: multiple pdfs with page group included in a single page
 pdfTeX warning: pdflatex (file ../Output/Temp-Attack/temp>301_starDiagram.pdf):
  PDF inclusion: multiple pdfs with page group included in a single page
 >]
-<../Output/Rain-Target/rain11-5_starDiagram.pdf, id=684, 723.68549pt x 351.2361
+<../Output/Rain-Target/rain11-5_starDiagram.pdf, id=690, 723.68549pt x 351.2361
 3pt>
 File: ../Output/Rain-Target/rain11-5_starDiagram.pdf Graphic file (type pdf)
 <use ../Output/Rain-Target/rain11-5_starDiagram.pdf>
 Package pdftex.def Info: ../Output/Rain-Target/rain11-5_starDiagram.pdf  used o
-n input line 187.
+n input line 180.
 (pdftex.def)             Requested size: 320.4937pt x 155.55194pt.
- [9
+ [10
 
  <../Output/Rain-Target/rain11-5_starDiagram.pdf>]
 File: Template/listelement.pdf Graphic file (type pdf)
 <use Template/listelement.pdf>
-Package pdftex.def Info: Template/listelement.pdf  used on input line 218.
+Package pdftex.def Info: Template/listelement.pdf  used on input line 211.
 (pdftex.def)             Requested size: 3.4796pt x 7.11113pt.
 File: Template/listelement.pdf Graphic file (type pdf)
 <use Template/listelement.pdf>
-Package pdftex.def Info: Template/listelement.pdf  used on input line 218.
+Package pdftex.def Info: Template/listelement.pdf  used on input line 211.
 (pdftex.def)             Requested size: 2.78288pt x 5.6889pt.
-<../Output/Rain-Target/rain0_starDiagram.pdf, id=750, 723.2009pt x 350.9822pt>
+<../Output/Rain-Target/rain0_starDiagram.pdf, id=756, 723.2009pt x 350.9822pt>
 File: ../Output/Rain-Target/rain0_starDiagram.pdf Graphic file (type pdf)
 <use ../Output/Rain-Target/rain0_starDiagram.pdf>
 Package pdftex.def Info: ../Output/Rain-Target/rain0_starDiagram.pdf  used on i
-nput line 218.
+nput line 211.
 (pdftex.def)             Requested size: 96.14908pt x 46.6629pt.
-<../Output/Rain-Target/rain01-1_starDiagram.pdf, id=751, 723.99983pt x 351.4188
+<../Output/Rain-Target/rain01-1_starDiagram.pdf, id=757, 723.99983pt x 351.4188
 pt>
 File: ../Output/Rain-Target/rain01-1_starDiagram.pdf Graphic file (type pdf)
 <use ../Output/Rain-Target/rain01-1_starDiagram.pdf>
 Package pdftex.def Info: ../Output/Rain-Target/rain01-1_starDiagram.pdf  used o
-n input line 218.
+n input line 211.
 (pdftex.def)             Requested size: 96.14908pt x 46.66733pt.
 File: ../Output/Rain-Target/rain11-5_starDiagram.pdf Graphic file (type pdf)
 <use ../Output/Rain-Target/rain11-5_starDiagram.pdf>
 Package pdftex.def Info: ../Output/Rain-Target/rain11-5_starDiagram.pdf  used o
-n input line 218.
+n input line 211.
 (pdftex.def)             Requested size: 96.14908pt x 46.6645pt.
-<../Output/Rain-Target/rain51-20_starDiagram.pdf, id=752, 723.68953pt x 351.239
+<../Output/Rain-Target/rain51-20_starDiagram.pdf, id=758, 723.68953pt x 351.239
 14pt>
 File: ../Output/Rain-Target/rain51-20_starDiagram.pdf Graphic file (type pdf)
 <use ../Output/Rain-Target/rain51-20_starDiagram.pdf>
 Package pdftex.def Info: ../Output/Rain-Target/rain51-20_starDiagram.pdf  used 
-on input line 218.
+on input line 211.
 (pdftex.def)             Requested size: 96.14908pt x 46.6649pt.
-<../Output/Rain-Target/rain>201_starDiagram.pdf, id=753, 723.92865pt x 351.3647
+<../Output/Rain-Target/rain>201_starDiagram.pdf, id=759, 723.92865pt x 351.3647
 9pt>
 File: ../Output/Rain-Target/rain>201_starDiagram.pdf Graphic file (type pdf)
 <use ../Output/Rain-Target/rain>201_starDiagram.pdf>
 Package pdftex.def Info: ../Output/Rain-Target/rain>201_starDiagram.pdf  used o
-n input line 218.
+n input line 211.
 (pdftex.def)             Requested size: 96.14908pt x 46.66551pt.
- [10
+ [11
 
  <../Output/Rain-Target/rain0_starDiagram.pdf> <../Output/Rain-Target/rain01-1_
 starDiagram.pdf
@@ -2186,57 +2193,57 @@ pdfTeX warning: pdflatex (file ../Output/Rain-Target/rain>201_starDiagram.pdf):
 >]
 File: Template/listelement.pdf Graphic file (type pdf)
 <use Template/listelement.pdf>
-Package pdftex.def Info: Template/listelement.pdf  used on input line 253.
+Package pdftex.def Info: Template/listelement.pdf  used on input line 246.
 (pdftex.def)             Requested size: 3.4796pt x 7.11113pt.
 File: Template/listelement.pdf Graphic file (type pdf)
 <use Template/listelement.pdf>
-Package pdftex.def Info: Template/listelement.pdf  used on input line 253.
+Package pdftex.def Info: Template/listelement.pdf  used on input line 246.
 (pdftex.def)             Requested size: 2.78288pt x 5.6889pt.
-<../Output/Temp-Target/temp<-100_starDiagram.pdf, id=990, 736.17104pt x 356.847
+<../Output/Temp-Target/temp<-100_starDiagram.pdf, id=996, 736.17104pt x 356.847
 67pt>
 File: ../Output/Temp-Target/temp<-100_starDiagram.pdf Graphic file (type pdf)
 <use ../Output/Temp-Target/temp<-100_starDiagram.pdf>
 Package pdftex.def Info: ../Output/Temp-Target/temp<-100_starDiagram.pdf  used 
-on input line 253.
+on input line 246.
 (pdftex.def)             Requested size: 96.14908pt x 46.60417pt.
-<../Output/Temp-Target/temp-101-0_starDiagram.pdf, id=991, 724.22406pt x 352.11
+<../Output/Temp-Target/temp-101-0_starDiagram.pdf, id=997, 724.22406pt x 352.11
 03pt>
 File: ../Output/Temp-Target/temp-101-0_starDiagram.pdf Graphic file (type pdf)
 <use ../Output/Temp-Target/temp-101-0_starDiagram.pdf>
 Package pdftex.def Info: ../Output/Temp-Target/temp-101-0_starDiagram.pdf  used
- on input line 253.
+ on input line 246.
 (pdftex.def)             Requested size: 96.14908pt x 46.74304pt.
-<../Output/Temp-Target/temp1-100_starDiagram.pdf, id=992, 722.76163pt x 351.296
+<../Output/Temp-Target/temp1-100_starDiagram.pdf, id=998, 722.76163pt x 351.296
 14pt>
 File: ../Output/Temp-Target/temp1-100_starDiagram.pdf Graphic file (type pdf)
 <use ../Output/Temp-Target/temp1-100_starDiagram.pdf>
 Package pdftex.def Info: ../Output/Temp-Target/temp1-100_starDiagram.pdf  used 
-on input line 253.
+on input line 246.
 (pdftex.def)             Requested size: 96.14908pt x 46.73145pt.
-<../Output/Temp-Target/temp101-200_starDiagram.pdf, id=993, 722.77156pt x 351.3
+<../Output/Temp-Target/temp101-200_starDiagram.pdf, id=999, 722.77156pt x 351.3
 0362pt>
 File: ../Output/Temp-Target/temp101-200_starDiagram.pdf Graphic file (type pdf)
 
 <use ../Output/Temp-Target/temp101-200_starDiagram.pdf>
 Package pdftex.def Info: ../Output/Temp-Target/temp101-200_starDiagram.pdf  use
-d on input line 253.
+d on input line 246.
 (pdftex.def)             Requested size: 96.14908pt x 46.73244pt.
-<../Output/Temp-Target/temp201-300_starDiagram.pdf, id=994, 722.67941pt x 351.2
-5507pt>
+<../Output/Temp-Target/temp201-300_starDiagram.pdf, id=1000, 722.67941pt x 351.
+25507pt>
 File: ../Output/Temp-Target/temp201-300_starDiagram.pdf Graphic file (type pdf)
 
 <use ../Output/Temp-Target/temp201-300_starDiagram.pdf>
 Package pdftex.def Info: ../Output/Temp-Target/temp201-300_starDiagram.pdf  use
-d on input line 253.
+d on input line 246.
 (pdftex.def)             Requested size: 96.14908pt x 46.73134pt.
-<../Output/Temp-Target/temp>301_starDiagram.pdf, id=995, 723.11316pt x 351.4831
-2pt>
+<../Output/Temp-Target/temp>301_starDiagram.pdf, id=1001, 723.11316pt x 351.483
+12pt>
 File: ../Output/Temp-Target/temp>301_starDiagram.pdf Graphic file (type pdf)
 <use ../Output/Temp-Target/temp>301_starDiagram.pdf>
 Package pdftex.def Info: ../Output/Temp-Target/temp>301_starDiagram.pdf  used o
-n input line 253.
+n input line 246.
 (pdftex.def)             Requested size: 96.14908pt x 46.73486pt.
- [11
+ [12
 
  <../Output/Temp-Target/temp<-100_starDiagram.pdf> <../Output/Temp-Target/temp-
 101-0_starDiagram.pdf
@@ -2260,58 +2267,58 @@ f): PDF inclusion: multiple pdfs with page group included in a single page
 pdfTeX warning: pdflatex (file ../Output/Temp-Target/temp>301_starDiagram.pdf):
  PDF inclusion: multiple pdfs with page group included in a single page
 >]
-<../Output/Rain-Weapon/rain11-5_starDiagram.pdf, id=1348, 492.46959pt x 351.027
+<../Output/Rain-Weapon/rain11-5_starDiagram.pdf, id=1354, 492.46959pt x 351.027
 04pt>
 File: ../Output/Rain-Weapon/rain11-5_starDiagram.pdf Graphic file (type pdf)
 <use ../Output/Rain-Weapon/rain11-5_starDiagram.pdf>
 Package pdftex.def Info: ../Output/Rain-Weapon/rain11-5_starDiagram.pdf  used o
-n input line 262.
+n input line 255.
 (pdftex.def)             Requested size: 256.39594pt x 182.76541pt.
- [12
+ [13
 
  <../Output/Rain-Weapon/rain11-5_starDiagram.pdf>]
 File: Template/listelement.pdf Graphic file (type pdf)
 <use Template/listelement.pdf>
-Package pdftex.def Info: Template/listelement.pdf  used on input line 293.
+Package pdftex.def Info: Template/listelement.pdf  used on input line 286.
 (pdftex.def)             Requested size: 3.4796pt x 7.11113pt.
 File: Template/listelement.pdf Graphic file (type pdf)
 <use Template/listelement.pdf>
-Package pdftex.def Info: Template/listelement.pdf  used on input line 293.
+Package pdftex.def Info: Template/listelement.pdf  used on input line 286.
 (pdftex.def)             Requested size: 2.78288pt x 5.6889pt.
-<../Output/Rain-Weapon/rain0_starDiagram.pdf, id=1411, 492.40686pt x 350.98712p
+<../Output/Rain-Weapon/rain0_starDiagram.pdf, id=1419, 492.40686pt x 350.98712p
 t>
 File: ../Output/Rain-Weapon/rain0_starDiagram.pdf Graphic file (type pdf)
 <use ../Output/Rain-Weapon/rain0_starDiagram.pdf>
 Package pdftex.def Info: ../Output/Rain-Weapon/rain0_starDiagram.pdf  used on i
-nput line 293.
+nput line 286.
 (pdftex.def)             Requested size: 96.14908pt x 68.53593pt.
-<../Output/Rain-Weapon/rain01-1_starDiagram.pdf, id=1412, 492.47284pt x 351.046
+<../Output/Rain-Weapon/rain01-1_starDiagram.pdf, id=1420, 492.47284pt x 351.046
 55pt>
 File: ../Output/Rain-Weapon/rain01-1_starDiagram.pdf Graphic file (type pdf)
 <use ../Output/Rain-Weapon/rain01-1_starDiagram.pdf>
 Package pdftex.def Info: ../Output/Rain-Weapon/rain01-1_starDiagram.pdf  used o
-n input line 293.
+n input line 286.
 (pdftex.def)             Requested size: 96.14908pt x 68.53682pt.
 File: ../Output/Rain-Weapon/rain11-5_starDiagram.pdf Graphic file (type pdf)
 <use ../Output/Rain-Weapon/rain11-5_starDiagram.pdf>
 Package pdftex.def Info: ../Output/Rain-Weapon/rain11-5_starDiagram.pdf  used o
-n input line 293.
+n input line 286.
 (pdftex.def)             Requested size: 96.14908pt x 68.533pt.
-<../Output/Rain-Weapon/rain51-20_starDiagram.pdf, id=1413, 492.46748pt x 351.02
+<../Output/Rain-Weapon/rain51-20_starDiagram.pdf, id=1421, 492.46748pt x 351.02
 655pt>
 File: ../Output/Rain-Weapon/rain51-20_starDiagram.pdf Graphic file (type pdf)
 <use ../Output/Rain-Weapon/rain51-20_starDiagram.pdf>
 Package pdftex.def Info: ../Output/Rain-Weapon/rain51-20_starDiagram.pdf  used 
-on input line 293.
+on input line 286.
 (pdftex.def)             Requested size: 96.14908pt x 68.53291pt.
-<../Output/Rain-Weapon/rain>201_starDiagram.pdf, id=1414, 492.42943pt x 351.001
+<../Output/Rain-Weapon/rain>201_starDiagram.pdf, id=1422, 492.42943pt x 351.001
 8pt>
 File: ../Output/Rain-Weapon/rain>201_starDiagram.pdf Graphic file (type pdf)
 <use ../Output/Rain-Weapon/rain>201_starDiagram.pdf>
 Package pdftex.def Info: ../Output/Rain-Weapon/rain>201_starDiagram.pdf  used o
-n input line 293.
+n input line 286.
 (pdftex.def)             Requested size: 96.14908pt x 68.53343pt.
- [13
+ [14
 
  <../Output/Rain-Weapon/rain0_starDiagram.pdf> <../Output/Rain-Weapon/rain01-1_
 starDiagram.pdf
@@ -2329,57 +2336,57 @@ pdfTeX warning: pdflatex (file ../Output/Rain-Weapon/rain>201_starDiagram.pdf):
 >]
 File: Template/listelement.pdf Graphic file (type pdf)
 <use Template/listelement.pdf>
-Package pdftex.def Info: Template/listelement.pdf  used on input line 328.
+Package pdftex.def Info: Template/listelement.pdf  used on input line 321.
 (pdftex.def)             Requested size: 3.4796pt x 7.11113pt.
 File: Template/listelement.pdf Graphic file (type pdf)
 <use Template/listelement.pdf>
-Package pdftex.def Info: Template/listelement.pdf  used on input line 328.
+Package pdftex.def Info: Template/listelement.pdf  used on input line 321.
 (pdftex.def)             Requested size: 2.78288pt x 5.6889pt.
-<../Output/Temp-Weapon/temp<-100_starDiagram.pdf, id=1647, 498.97041pt x 354.93
+<../Output/Temp-Weapon/temp<-100_starDiagram.pdf, id=1653, 498.97041pt x 354.93
 593pt>
 File: ../Output/Temp-Weapon/temp<-100_starDiagram.pdf Graphic file (type pdf)
 <use ../Output/Temp-Weapon/temp<-100_starDiagram.pdf>
 Package pdftex.def Info: ../Output/Temp-Weapon/temp<-100_starDiagram.pdf  used 
-on input line 328.
+on input line 321.
 (pdftex.def)             Requested size: 96.14908pt x 68.39171pt.
-<../Output/Temp-Weapon/temp-101-0_starDiagram.pdf, id=1648, 492.80421pt x 351.8
+<../Output/Temp-Weapon/temp-101-0_starDiagram.pdf, id=1654, 492.80421pt x 351.8
 3554pt>
 File: ../Output/Temp-Weapon/temp-101-0_starDiagram.pdf Graphic file (type pdf)
 <use ../Output/Temp-Weapon/temp-101-0_starDiagram.pdf>
 Package pdftex.def Info: ../Output/Temp-Weapon/temp-101-0_starDiagram.pdf  used
- on input line 328.
+ on input line 321.
 (pdftex.def)             Requested size: 96.14908pt x 68.64255pt.
-<../Output/Temp-Weapon/temp1-100_starDiagram.pdf, id=1649, 491.97096pt x 351.24
+<../Output/Temp-Weapon/temp1-100_starDiagram.pdf, id=1655, 491.97096pt x 351.24
 875pt>
 File: ../Output/Temp-Weapon/temp1-100_starDiagram.pdf Graphic file (type pdf)
 <use ../Output/Temp-Weapon/temp1-100_starDiagram.pdf>
 Package pdftex.def Info: ../Output/Temp-Weapon/temp1-100_starDiagram.pdf  used 
-on input line 328.
+on input line 321.
 (pdftex.def)             Requested size: 96.14908pt x 68.64598pt.
-<../Output/Temp-Weapon/temp101-200_starDiagram.pdf, id=1650, 491.92422pt x 351.
+<../Output/Temp-Weapon/temp101-200_starDiagram.pdf, id=1656, 491.92422pt x 351.
 22064pt>
 File: ../Output/Temp-Weapon/temp101-200_starDiagram.pdf Graphic file (type pdf)
 
 <use ../Output/Temp-Weapon/temp101-200_starDiagram.pdf>
 Package pdftex.def Info: ../Output/Temp-Weapon/temp101-200_starDiagram.pdf  use
-d on input line 328.
+d on input line 321.
 (pdftex.def)             Requested size: 96.14908pt x 68.64584pt.
-<../Output/Temp-Weapon/temp201-300_starDiagram.pdf, id=1651, 491.91953pt x 351.
+<../Output/Temp-Weapon/temp201-300_starDiagram.pdf, id=1657, 491.91953pt x 351.
 21748pt>
 File: ../Output/Temp-Weapon/temp201-300_starDiagram.pdf Graphic file (type pdf)
 
 <use ../Output/Temp-Weapon/temp201-300_starDiagram.pdf>
 Package pdftex.def Info: ../Output/Temp-Weapon/temp201-300_starDiagram.pdf  use
-d on input line 328.
+d on input line 321.
 (pdftex.def)             Requested size: 96.14908pt x 68.64522pt.
-<../Output/Temp-Weapon/temp>301_starDiagram.pdf, id=1652, 492.08911pt x 351.327
+<../Output/Temp-Weapon/temp>301_starDiagram.pdf, id=1658, 492.08911pt x 351.327
 67pt>
 File: ../Output/Temp-Weapon/temp>301_starDiagram.pdf Graphic file (type pdf)
 <use ../Output/Temp-Weapon/temp>301_starDiagram.pdf>
 Package pdftex.def Info: ../Output/Temp-Weapon/temp>301_starDiagram.pdf  used o
-n input line 328.
+n input line 321.
 (pdftex.def)             Requested size: 96.14908pt x 68.64531pt.
- [14
+ [15
 
  <../Output/Temp-Weapon/temp<-100_starDiagram.pdf> <../Output/Temp-Weapon/temp-
 101-0_starDiagram.pdf
@@ -2403,28 +2410,28 @@ f): PDF inclusion: multiple pdfs with page group included in a single page
 pdfTeX warning: pdflatex (file ../Output/Temp-Weapon/temp>301_starDiagram.pdf):
  PDF inclusion: multiple pdfs with page group included in a single page
 >]
-<../Output/Band-Terror/attacksVsBandsSplit.pdf, id=2008, 465.47775pt x 327.2031
+<../Output/Band-Terror/attacksVsBandsSplit.pdf, id=2014, 465.47775pt x 327.2031
 7pt>
 File: ../Output/Band-Terror/attacksVsBandsSplit.pdf Graphic file (type pdf)
 <use ../Output/Band-Terror/attacksVsBandsSplit.pdf>
 Package pdftex.def Info: ../Output/Band-Terror/attacksVsBandsSplit.pdf  used on
- input line 342.
+ input line 335.
 (pdftex.def)             Requested size: 96.14908pt x 67.58633pt.
-<../Output/Band-Terror/attacksVsBandsFormed.pdf, id=2009, 465.47775pt x 327.203
+<../Output/Band-Terror/attacksVsBandsFormed.pdf, id=2015, 465.47775pt x 327.203
 17pt>
 File: ../Output/Band-Terror/attacksVsBandsFormed.pdf Graphic file (type pdf)
 <use ../Output/Band-Terror/attacksVsBandsFormed.pdf>
 Package pdftex.def Info: ../Output/Band-Terror/attacksVsBandsFormed.pdf  used o
-n input line 342.
+n input line 335.
 (pdftex.def)             Requested size: 96.14908pt x 67.58633pt.
-<../Output/Band-Terror/attacksVsBandsExisting.pdf, id=2010, 471.86098pt x 327.2
+<../Output/Band-Terror/attacksVsBandsExisting.pdf, id=2016, 471.86098pt x 327.2
 0317pt>
 File: ../Output/Band-Terror/attacksVsBandsExisting.pdf Graphic file (type pdf)
 <use ../Output/Band-Terror/attacksVsBandsExisting.pdf>
 Package pdftex.def Info: ../Output/Band-Terror/attacksVsBandsExisting.pdf  used
- on input line 342.
+ on input line 335.
 (pdftex.def)             Requested size: 208.31894pt x 144.45412pt.
- [15
+ [16
 
  <../Output/Band-Terror/attacksVsBandsSplit.pdf> <../Output/Band-Terror/attacks
 VsBandsFormed.pdf
@@ -2436,31 +2443,31 @@ pdfTeX warning: pdflatex (file ../Output/Band-Terror/attacksVsBandsFormed.pdf):
 pdfTeX warning: pdflatex (file ../Output/Band-Terror/attacksVsBandsExisting.pdf
 ): PDF inclusion: multiple pdfs with page group included in a single page
 >]
-<../Output/Population-Bands/populationVsBandFinland.pdf, id=2119, 478.2442pt x 
+<../Output/Population-Bands/populationVsBandFinland.pdf, id=2125, 478.2442pt x 
 327.20317pt>
 File: ../Output/Population-Bands/populationVsBandFinland.pdf Graphic file (type
  pdf)
 <use ../Output/Population-Bands/populationVsBandFinland.pdf>
 Package pdftex.def Info: ../Output/Population-Bands/populationVsBandFinland.pdf
-  used on input line 358.
+  used on input line 351.
 (pdftex.def)             Requested size: 100.95628pt x 69.06917pt.
-<../Output/Population-Bands/populationVsBandSweden.pdf, id=2120, 455.91077pt x 
+<../Output/Population-Bands/populationVsBandSweden.pdf, id=2126, 455.91077pt x 
 327.20317pt>
 File: ../Output/Population-Bands/populationVsBandSweden.pdf Graphic file (type 
 pdf)
 <use ../Output/Population-Bands/populationVsBandSweden.pdf>
 Package pdftex.def Info: ../Output/Population-Bands/populationVsBandSweden.pdf 
- used on input line 358.
+ used on input line 351.
 (pdftex.def)             Requested size: 96.14908pt x 69.00426pt.
-<../Output/Population-Bands/populationVsBandGermany.pdf, id=2121, 449.52754pt x
+<../Output/Population-Bands/populationVsBandGermany.pdf, id=2127, 449.52754pt x
  327.20317pt>
 File: ../Output/Population-Bands/populationVsBandGermany.pdf Graphic file (type
  pdf)
 <use ../Output/Population-Bands/populationVsBandGermany.pdf>
 Package pdftex.def Info: ../Output/Population-Bands/populationVsBandGermany.pdf
-  used on input line 358.
+  used on input line 351.
 (pdftex.def)             Requested size: 96.14908pt x 69.98283pt.
- [16
+ [17
 
  <../Output/Population-Bands/populationVsBandFinland.pdf> <../Output/Population
 -Bands/populationVsBandSweden.pdf
@@ -2473,31 +2480,31 @@ pdfTeX warning: pdflatex (file ../Output/Population-Bands/populationVsBandGerma
 ny.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 
 >]
-<../Output/Population-Bands/populationVsBandUkraine.pdf, id=2243, 443.14432pt x
+<../Output/Population-Bands/populationVsBandUkraine.pdf, id=2249, 443.14432pt x
  327.20317pt>
 File: ../Output/Population-Bands/populationVsBandUkraine.pdf Graphic file (type
  pdf)
 <use ../Output/Population-Bands/populationVsBandUkraine.pdf>
 Package pdftex.def Info: ../Output/Population-Bands/populationVsBandUkraine.pdf
-  used on input line 374.
+  used on input line 367.
 (pdftex.def)             Requested size: 100.95628pt x 74.54118pt.
-<../Output/Population-Bands/populationVsBandRomania.pdf, id=2244, 452.727pt x 3
+<../Output/Population-Bands/populationVsBandRomania.pdf, id=2250, 452.727pt x 3
 27.20317pt>
 File: ../Output/Population-Bands/populationVsBandRomania.pdf Graphic file (type
  pdf)
 <use ../Output/Population-Bands/populationVsBandRomania.pdf>
 Package pdftex.def Info: ../Output/Population-Bands/populationVsBandRomania.pdf
-  used on input line 374.
+  used on input line 367.
 (pdftex.def)             Requested size: 96.14908pt x 69.48856pt.
-<../Output/Population-Bands/populationVsBandLatvia.pdf, id=2245, 471.86098pt x 
+<../Output/Population-Bands/populationVsBandLatvia.pdf, id=2251, 471.86098pt x 
 327.20317pt>
 File: ../Output/Population-Bands/populationVsBandLatvia.pdf Graphic file (type 
 pdf)
 <use ../Output/Population-Bands/populationVsBandLatvia.pdf>
 Package pdftex.def Info: ../Output/Population-Bands/populationVsBandLatvia.pdf 
- used on input line 374.
+ used on input line 367.
 (pdftex.def)             Requested size: 96.14908pt x 66.67267pt.
- [17
+ [18
 
  <../Output/Population-Bands/populationVsBandUkraine.pdf> <../Output/Population
 -Bands/populationVsBandRomania.pdf
@@ -2510,76 +2517,38 @@ ia.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 pdfTeX warning: pdflatex (file ../Output/Population-Bands/populationVsBandLatvi
 a.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >]
-<../Output/genreVsTerrorism.pdf, id=2368, 474.74144pt x 327.20317pt>
+<../Output/genreVsTerrorism.pdf, id=2374, 474.74144pt x 327.20317pt>
 File: ../Output/genreVsTerrorism.pdf Graphic file (type pdf)
 <use ../Output/genreVsTerrorism.pdf>
-Package pdftex.def Info: ../Output/genreVsTerrorism.pdf  used on input line 382
+Package pdftex.def Info: ../Output/genreVsTerrorism.pdf  used on input line 375
 .
 (pdftex.def)             Requested size: 256.39594pt x 176.72202pt.
- [18
-
- <../Output/genreVsTerrorism.pdf>]
-<../Output/Population-Terror/attackVsPopulationItaly.pdf, id=2415, 449.52754pt 
-x 327.20317pt>
-File: ../Output/Population-Terror/attackVsPopulationItaly.pdf Graphic file (typ
-e pdf)
-<use ../Output/Population-Terror/attackVsPopulationItaly.pdf>
-Package pdftex.def Info: ../Output/Population-Terror/attackVsPopulationItaly.pd
-f  used on input line 398.
-(pdftex.def)             Requested size: 100.95628pt x 73.48273pt.
-<../Output/Population-Terror/attackVsPopulationUnitedKingdom.pdf, id=2416, 449.
-52754pt x 327.20317pt>
-File: ../Output/Population-Terror/attackVsPopulationUnitedKingdom.pdf Graphic f
-ile (type pdf)
-<use ../Output/Population-Terror/attackVsPopulationUnitedKingdom.pdf>
-Package pdftex.def Info: ../Output/Population-Terror/attackVsPopulationUnitedKi
-ngdom.pdf  used on input line 398.
-(pdftex.def)             Requested size: 96.14908pt x 69.98283pt.
-<../Output/Population-Terror/attackVsPopulationThailand.pdf, id=2417, 449.52754
-pt x 327.20317pt>
-File: ../Output/Population-Terror/attackVsPopulationThailand.pdf Graphic file (
-type pdf)
-<use ../Output/Population-Terror/attackVsPopulationThailand.pdf>
-Package pdftex.def Info: ../Output/Population-Terror/attackVsPopulationThailand
-.pdf  used on input line 398.
-(pdftex.def)             Requested size: 96.14908pt x 69.98283pt.
  [19
 
- <../Output/Population-Terror/attackVsPopulationItaly.pdf> <../Output/Populatio
-n-Terror/attackVsPopulationUnitedKingdom.pdf
-
-pdfTeX warning: pdflatex (file ../Output/Population-Terror/attackVsPopulationUn
-itedKingdom.pdf): PDF inclusion: multiple pdfs with page group included in a si
-ngle page
-> <../Output/Population-Terror/attackVsPopulationThailand.pdf
-
-pdfTeX warning: pdflatex (file ../Output/Population-Terror/attackVsPopulationTh
-ailand.pdf): PDF inclusion: multiple pdfs with page group included in a single 
-page
->]
-<../Output/Population-Terror/attackVsPopulationSudan.pdf, id=2539, 449.52754pt 
+ <../Output/genreVsTerrorism.pdf>]
+<../Output/Population-Terror/attackVsPopulationSudan.pdf, id=2422, 449.52754pt 
 x 327.20317pt>
 File: ../Output/Population-Terror/attackVsPopulationSudan.pdf Graphic file (typ
 e pdf)
 <use ../Output/Population-Terror/attackVsPopulationSudan.pdf>
 Package pdftex.def Info: ../Output/Population-Terror/attackVsPopulationSudan.pd
-f  used on input line 414.
+f  used on input line 391.
 (pdftex.def)             Requested size: 100.95628pt x 73.48273pt.
-<../Output/Population-Terror/attackVsPopulationColombia.pdf, id=2540, 449.52754
+<../Output/Population-Terror/attackVsPopulationColombia.pdf, id=2423, 449.52754
 pt x 327.20317pt>
 File: ../Output/Population-Terror/attackVsPopulationColombia.pdf Graphic file (
 type pdf)
 <use ../Output/Population-Terror/attackVsPopulationColombia.pdf>
 Package pdftex.def Info: ../Output/Population-Terror/attackVsPopulationColombia
-.pdf  used on input line 414.
+.pdf  used on input line 391.
 (pdftex.def)             Requested size: 96.14908pt x 69.98283pt.
-<../Output/Population-Terror/attackVsPopulationTurkey.pdf, id=2541, 439.94487pt
+<../Output/Population-Terror/attackVsPopulationTurkey.pdf, id=2424, 439.94487pt
  x 327.20317pt>
 File: ../Output/Population-Terror/attackVsPopulationTurkey.pdf Graphic file (ty
 pe pdf)
 <use ../Output/Population-Terror/attackVsPopulationTurkey.pdf>
 Package pdftex.def Info: ../Output/Population-Terror/attackVsPopulationTurkey.p
-df  used on input line 414.
+df  used on input line 391.
 (pdftex.def)             Requested size: 96.14908pt x 71.5106pt.
  [20
 
@@ -2595,10 +2564,44 @@ pdfTeX warning: pdflatex (file ../Output/Population-Terror/attackVsPopulationTu
 rkey.pdf): PDF inclusion: multiple pdfs with page group included in a single pa
 ge
 >]
-\g__file_internal_ior=\read4
-<<VPlayer.swf>><<mapVideo.mp4>> [21
+<../Output/Population-Terror/attackVsPopulationItaly.pdf, id=2541, 449.52754pt 
+x 327.20317pt>
+File: ../Output/Population-Terror/attackVsPopulationItaly.pdf Graphic file (typ
+e pdf)
+<use ../Output/Population-Terror/attackVsPopulationItaly.pdf>
+Package pdftex.def Info: ../Output/Population-Terror/attackVsPopulationItaly.pd
+f  used on input line 407.
+(pdftex.def)             Requested size: 100.95628pt x 73.48273pt.
+<../Output/Population-Terror/attackVsPopulationUnitedKingdom.pdf, id=2542, 449.
+52754pt x 327.20317pt>
+File: ../Output/Population-Terror/attackVsPopulationUnitedKingdom.pdf Graphic f
+ile (type pdf)
+<use ../Output/Population-Terror/attackVsPopulationUnitedKingdom.pdf>
+Package pdftex.def Info: ../Output/Population-Terror/attackVsPopulationUnitedKi
+ngdom.pdf  used on input line 407.
+(pdftex.def)             Requested size: 96.14908pt x 69.98283pt.
+<../Output/Population-Terror/attackVsPopulationMoldova.pdf, id=2543, 471.86098p
+t x 327.20317pt>
+File: ../Output/Population-Terror/attackVsPopulationMoldova.pdf Graphic file (t
+ype pdf)
+<use ../Output/Population-Terror/attackVsPopulationMoldova.pdf>
+Package pdftex.def Info: ../Output/Population-Terror/attackVsPopulationMoldova.
+pdf  used on input line 407.
+(pdftex.def)             Requested size: 96.14908pt x 66.67267pt.
+ [21
 
-]
+ <../Output/Population-Terror/attackVsPopulationItaly.pdf> <../Output/Populatio
+n-Terror/attackVsPopulationUnitedKingdom.pdf
+
+pdfTeX warning: pdflatex (file ../Output/Population-Terror/attackVsPopulationUn
+itedKingdom.pdf): PDF inclusion: multiple pdfs with page group included in a si
+ngle page
+> <../Output/Population-Terror/attackVsPopulationMoldova.pdf
+
+pdfTeX warning: pdflatex (file ../Output/Population-Terror/attackVsPopulationMo
+ldova.pdf): PDF inclusion: multiple pdfs with page group included in a single p
+age
+>]
 \tf@nav=\write8
 \openout8 = `DBPresentation_LukasStoeckli_ManuelRickli.nav'.
 
@@ -2615,11 +2618,11 @@ Package movie15 Warning: @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 (movie15)                @@ superseded by `media9'.           @@
 (movie15)                @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 429.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 429.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 412.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 412.
 (./DBPresentation_LukasStoeckli_ManuelRickli.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 429.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 429.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 412.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 412.
 Package rerunfilecheck Info: File `DBPresentation_LukasStoeckli_ManuelRickli.ou
 t' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
@@ -2641,22 +2644,22 @@ ckli.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 41073 strings out of 494830
- 819480 string characters out of 6177366
- 1251534 words of memory out of 5000000
- 43674 multiletter control sequences out of 15000+600000
+ 41026 strings out of 494830
+ 818374 string characters out of 6177366
+ 1251322 words of memory out of 5000000
+ 43631 multiletter control sequences out of 15000+600000
  537433 words of font info for 48 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 58i,14n,71p,10424b,790s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 58i,14n,71p,10424b,788s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr
 /share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share
 /texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texli
 ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb>
-Output written on DBPresentation_LukasStoeckli_ManuelRickli.pdf (21 pages, 3385
-697 bytes).
+Output written on DBPresentation_LukasStoeckli_ManuelRickli.pdf (21 pages, 1118
+708 bytes).
 PDF statistics:
- 2715 PDF objects out of 2984 (max. 8388607)
- 431 compressed objects within 5 object streams
+ 2690 PDF objects out of 2984 (max. 8388607)
+ 414 compressed objects within 5 object streams
  43 named destinations out of 1000 (max. 500000)
- 376 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 298 words of extra memory for PDF output out of 10000 (max. 10000000)
 

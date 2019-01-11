@@ -2,8 +2,7 @@
 \usepackage{basileabeam}
 \usepackage{graphicx}
 \usepackage{subcaption}
-\usepackage{media9}
-
+\usepackage{animate,media9,movie15}
 
 \usepackage[font=small,labelfont=bf]{caption}
 
@@ -30,21 +29,6 @@
 % Contribution: what have we done, how do we benefit from it
 % data sets and implementation: short overview of the data sources and noteworthy parts of the implementation;
 
-\newcommand{\figures[3]}{
-	\begin{figure}
-		\begin{subfigure}[b]{0.3\textwidth}
-			\includegraphics[width=\textwidth]{#1}
-		\end{subfigure}
-		\begin{subfigure}[b]{0.3\textwidth}
-			\includegraphics[width=\textwidth]{#2}
-		\end{subfigure}
-		\begin{subfigure}[b]{0.3\textwidth}
-			\includegraphics[width=\textwidth]{#3}
-		\end{subfigure}
-	\end{figure}
-}
-
-
 \begin{document}
 \begin{frame}[t,plain]
 	\titlepage
@@ -56,9 +40,9 @@
 	\begin{tabularx}{\textwidth}{X}
 		\hline
 		\rowcolor{hcolor}
-		Introduction\\
-		\hline
 		Datasets \& Schema\\
+		\hline
+		Analasys Goals\\
 		\hline
 		Results\\
 		\hline
@@ -68,10 +52,10 @@
 \begin{frame}
 	\begin{tabularx}{\textwidth}{X}
 		\hline
-		Introduction\\
+		Datasets \& Schema\\
 		\hline
 		\rowcolor{hcolor}
-		Datasets \& Schema\\
+		Analasys Goals\\
 		\hline
 		Results\\
 		\hline
@@ -81,9 +65,9 @@
 \begin{frame}
 	\begin{tabularx}{\textwidth}{X}
 		\hline
-		Introduction\\
-		\hline
 		Datasets \& Schema\\
+		\hline
+		Analasys Goals\\
 		\hline
 		\rowcolor{hcolor}
 		Results\\
@@ -412,21 +396,6 @@
 			\includegraphics[width=\textwidth]{Population-Terror/attackVsPopulationTurkey}
 		\end{subfigure}
 	\end{figure}
-\end{frame}
-
-\begin{frame}
-\frametitle{media9}
-\includemedia[
-  activate=pageopen,
-  width=240pt,height=150pt,
-  addresource=mapVideo.mp4,
-  flashvars={%
-source=mapVideo.mp4      % same path as in addresource!
-%&scaleMode=stretch % removes black bars
-&autoPlay=true      % optional configuration
-&loop=true          % variables
-}
-]{}{VPlayer.swf}
 \end{frame}
 
 
