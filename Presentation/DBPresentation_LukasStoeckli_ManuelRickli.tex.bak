@@ -2,6 +2,8 @@
 \usepackage{basileabeam}
 \usepackage{graphicx}
 \usepackage{subcaption}
+\usepackage{media9}
+
 
 \usepackage[font=small,labelfont=bf]{caption}
 
@@ -327,7 +329,7 @@
 \end{frame}
 
 \begin{frame}{Results}
-	Does the population influence founding/splitting of metal bands and vice versa?
+	Do terror attacks influence founding/splitting of metal bands and vice versa?
 	
 	\begin{figure}
 		\begin{subfigure}[b]{0.3\textwidth}
@@ -372,7 +374,60 @@
 	\end{figure}
 \end{frame}
 
+\begin{frame}{Results}
+	
+	\begin{figure}
+		\includegraphics[width=0.8\textwidth]{genreVsTerrorism}
+	\end{figure}
+	
+\end{frame}
 
+\begin{frame}{Results}
+	Do terror attacks have an influence on the population?
+	
+	\begin{figure}
+		\begin{subfigure}[b]{0.315\textwidth}
+			\includegraphics[width=\textwidth]{Population-Terror/attackVsPopulationItaly}
+		\end{subfigure}
+		\begin{subfigure}[b]{0.3\textwidth}
+			\includegraphics[width=\textwidth]{Population-Terror/attackVsPopulationUnitedKingdom}
+		\end{subfigure}
+		\begin{subfigure}[b]{0.3\textwidth}
+			\includegraphics[width=\textwidth]{Population-Terror/attackVsPopulationThailand}
+		\end{subfigure}
+	\end{figure}
+\end{frame}
+
+\begin{frame}{Results}
+	Do terror attacks have an influence on the population?
+	
+	\begin{figure}
+		\begin{subfigure}[b]{0.315\textwidth}
+			\includegraphics[width=\textwidth]{Population-Terror/attackVsPopulationSudan}
+		\end{subfigure}
+		\begin{subfigure}[b]{0.3\textwidth}
+			\includegraphics[width=\textwidth]{Population-Terror/attackVsPopulationColombia}
+		\end{subfigure}
+		\begin{subfigure}[b]{0.3\textwidth}
+			\includegraphics[width=\textwidth]{Population-Terror/attackVsPopulationTurkey}
+		\end{subfigure}
+	\end{figure}
+\end{frame}
+
+\begin{frame}
+\frametitle{media9}
+\includemedia[
+  activate=pageopen,
+  width=240pt,height=150pt,
+  addresource=mapVideo.mp4,
+  flashvars={%
+source=mapVideo.mp4      % same path as in addresource!
+%&scaleMode=stretch % removes black bars
+&autoPlay=true      % optional configuration
+&loop=true          % variables
+}
+]{}{VPlayer.swf}
+\end{frame}
 
 
 \end{document}
