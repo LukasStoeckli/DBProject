@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.18)  11 JAN 2019 01:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.18)  11 JAN 2019 02:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2410,19 +2410,19 @@ f): PDF inclusion: multiple pdfs with page group included in a single page
 pdfTeX warning: pdflatex (file ../Output/Temp-Weapon/temp>301_starDiagram.pdf):
  PDF inclusion: multiple pdfs with page group included in a single page
 >]
-<../Output/Band-Terror/attacksVsBandsSplit.pdf, id=2014, 465.47775pt x 327.2031
-7pt>
-File: ../Output/Band-Terror/attacksVsBandsSplit.pdf Graphic file (type pdf)
-<use ../Output/Band-Terror/attacksVsBandsSplit.pdf>
-Package pdftex.def Info: ../Output/Band-Terror/attacksVsBandsSplit.pdf  used on
- input line 335.
-(pdftex.def)             Requested size: 96.14908pt x 67.58633pt.
-<../Output/Band-Terror/attacksVsBandsFormed.pdf, id=2015, 465.47775pt x 327.203
+<../Output/Band-Terror/attacksVsBandsFormed.pdf, id=2014, 465.47775pt x 327.203
 17pt>
 File: ../Output/Band-Terror/attacksVsBandsFormed.pdf Graphic file (type pdf)
 <use ../Output/Band-Terror/attacksVsBandsFormed.pdf>
 Package pdftex.def Info: ../Output/Band-Terror/attacksVsBandsFormed.pdf  used o
 n input line 335.
+(pdftex.def)             Requested size: 96.14908pt x 67.58633pt.
+<../Output/Band-Terror/attacksVsBandsSplit.pdf, id=2015, 465.47775pt x 327.2031
+7pt>
+File: ../Output/Band-Terror/attacksVsBandsSplit.pdf Graphic file (type pdf)
+<use ../Output/Band-Terror/attacksVsBandsSplit.pdf>
+Package pdftex.def Info: ../Output/Band-Terror/attacksVsBandsSplit.pdf  used on
+ input line 335.
 (pdftex.def)             Requested size: 96.14908pt x 67.58633pt.
 <../Output/Band-Terror/attacksVsBandsExisting.pdf, id=2016, 471.86098pt x 327.2
 0317pt>
@@ -2433,11 +2433,11 @@ Package pdftex.def Info: ../Output/Band-Terror/attacksVsBandsExisting.pdf  used
 (pdftex.def)             Requested size: 208.31894pt x 144.45412pt.
  [16
 
- <../Output/Band-Terror/attacksVsBandsSplit.pdf> <../Output/Band-Terror/attacks
-VsBandsFormed.pdf
+ <../Output/Band-Terror/attacksVsBandsFormed.pdf> <../Output/Band-Terror/attack
+sVsBandsSplit.pdf
 
-pdfTeX warning: pdflatex (file ../Output/Band-Terror/attacksVsBandsFormed.pdf):
- PDF inclusion: multiple pdfs with page group included in a single page
+pdfTeX warning: pdflatex (file ../Output/Band-Terror/attacksVsBandsSplit.pdf): 
+PDF inclusion: multiple pdfs with page group included in a single page
 > <../Output/Band-Terror/attacksVsBandsExisting.pdf
 
 pdfTeX warning: pdflatex (file ../Output/Band-Terror/attacksVsBandsExisting.pdf
@@ -2656,7 +2656,7 @@ Here is how much of TeX's memory you used:
 /texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texli
 ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb>
 Output written on DBPresentation_LukasStoeckli_ManuelRickli.pdf (21 pages, 1118
-708 bytes).
+702 bytes).
 PDF statistics:
  2690 PDF objects out of 2984 (max. 8388607)
  414 compressed objects within 5 object streams

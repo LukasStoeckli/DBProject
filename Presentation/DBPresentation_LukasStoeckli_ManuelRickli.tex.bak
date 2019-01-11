@@ -50,6 +50,14 @@
 \end{frame}
 
 \begin{frame}
+	Datasets:
+	\begin{itemize}
+		\item 
+	\end{itemize}
+
+\end{frame}
+
+\begin{frame}
 	\begin{tabularx}{\textwidth}{X}
 		\hline
 		Datasets \& Schema\\
@@ -67,7 +75,7 @@
 		\hline
 		Datasets \& Schema\\
 		\hline
-		Analasys Goals\\
+		Analysis Goals\\
 		\hline
 		\rowcolor{hcolor}
 		Results\\
@@ -371,22 +379,6 @@
 	
 	\begin{figure}
 		\begin{subfigure}[b]{0.315\textwidth}
-			\includegraphics[width=\textwidth]{Population-Terror/attackVsPopulationItaly}
-		\end{subfigure}
-		\begin{subfigure}[b]{0.3\textwidth}
-			\includegraphics[width=\textwidth]{Population-Terror/attackVsPopulationUnitedKingdom}
-		\end{subfigure}
-		\begin{subfigure}[b]{0.3\textwidth}
-			\includegraphics[width=\textwidth]{Population-Terror/attackVsPopulationThailand}
-		\end{subfigure}
-	\end{figure}
-\end{frame}
-
-\begin{frame}{Results}
-	Do terror attacks have an influence on the population?
-	
-	\begin{figure}
-		\begin{subfigure}[b]{0.315\textwidth}
 			\includegraphics[width=\textwidth]{Population-Terror/attackVsPopulationSudan}
 		\end{subfigure}
 		\begin{subfigure}[b]{0.3\textwidth}
@@ -397,6 +389,24 @@
 		\end{subfigure}
 	\end{figure}
 \end{frame}
+
+\begin{frame}{Results}
+	Do terror attacks have an influence on the population?
+	
+	\begin{figure}
+		\begin{subfigure}[b]{0.315\textwidth}
+			\includegraphics[width=\textwidth]{Population-Terror/attackVsPopulationItaly}
+		\end{subfigure}
+		\begin{subfigure}[b]{0.3\textwidth}
+			\includegraphics[width=\textwidth]{Population-Terror/attackVsPopulationUnitedKingdom}
+		\end{subfigure}
+		\begin{subfigure}[b]{0.3\textwidth}
+			\includegraphics[width=\textwidth]{Population-Terror/attackVsPopulationMoldova}
+		\end{subfigure}
+	\end{figure}
+\end{frame}
+
+
 
 
 \end{document}
