@@ -5,3 +5,21 @@ logs/**
 \.idea/
 
 *.bak
+
+report/main.aux
+report/main.dvi
+report/main.log
+report/main.out
+report/main.synctex.gz
+report/reportContent/reportContent.log
+report/reportContent/sections/*.log
+
+Presentation/DBPresentation_LukasStoeckli_ManuelRickli.aux
+Presentation/DBPresentation_LukasStoeckli_ManuelRickli.bcf
+Presentation/DBPresentation_LukasStoeckli_ManuelRickli.log
+Presentation/DBPresentation_LukasStoeckli_ManuelRickli.nav
+Presentation/DBPresentation_LukasStoeckli_ManuelRickli.out
+Presentation/DBPresentation_LukasStoeckli_ManuelRickli.run.xml
+Presentation/DBPresentation_LukasStoeckli_ManuelRickli.snm
+Presentation/DBPresentation_LukasStoeckli_ManuelRickli.synctex.gz
+Presentation/DBPresentation_LukasStoeckli_ManuelRickli.toc
