@@ -1,0 +1,96 @@
+<script src="http://cdnjs.cloudflare.com/ajax/libs/d3/3.5.3/d3.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/topojson/1.6.9/topojson.min.js"></script>
+<script src="datamaps.world.hires.min.js"></script>
+<script src="mapData.js"></script>
+
+<style>
+  input[type=range] {
+    height: 57px;
+    -webkit-appearance: none;
+    margin: 10px 0;
+    width: 100%;
+  }
+  input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 10px;
+    cursor: pointer;
+    box-shadow: 1px 1px 1px #000000;
+    background: #3071A9;
+    border-radius: 5px;
+    border: 1px solid #000000;
+  }
+  input[type=range]::-webkit-slider-thumb {
+    box-shadow: 1px 1px 10px #000000;
+    border: 0px solid #000000;
+    height: 30px;
+    width: 15px;
+    border-radius: 50%;
+    background: #FFFFFF;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -10.5px;
+  }
+  input[type=range]:focus::-webkit-slider-runnable-track {
+    background: #3071A9;
+  }
+  p.yearShow {
+    font-size: 30px;
+  }
+</style>
+
+
+<div align="center">
+  <p class="yearShow">Global Terrorism</p>
+  <p class="yearShow" id="yearShow">Select year</p>
+</div>
+<div id="container" style="position: relative; width: 100%; height: 75%;"></div>
+<input type="range" min="1970" max="2017" value="1970" class="slider" id="yearSelect">
+
+
+<script>
+    var map = new Datamap({
+        element: document.getElementById('container'),
+        fills: {
+            BUBBLE: 'red',
+            defaultFill: 'rgba(53,78,10,0.3)'
+        }
+    });
+
+    var slider = document.getElementById("yearSelect");
+    var output = document.getElementById("yearShow");
+    output.innerHTML = slider.value;
+    updateBubbles(slider.value);
+
+    slider.oninput = function() {
+      output.innerHTML = this.value;
+      updateBubbles(this.value);
+    }
+
+    function updateBubbles(year) {
+      index = year - 1970;
+      map.bubbles(events[index], {
+        popupTemplate:function (geography, data) {
+                return ['<div class="hoverinfo"><strong>' +  data.name + '</strong>',
+                '<br/>Attacks: ' +  data.attacks,
+                '<br/>killed: ' + data.killed,
+                '<br/>wounded: ' + data.wounded,
+                '<br/>Country: ' +  data.country + '',
+                '</div>'].join('');
+        },
+        borderWidth: 0
+      });
+    }
+
+    var animIndex = 0;
+    function animateBubbles() {
+      output.innerHTML = animIndex + 1970;
+      slider.value = animIndex + 1970;
+      map.bubbles(events[animIndex], {
+        borderWidth: 0
+      });
+      animIndex = (animIndex + 1) % events.length;
+    }
+    //setInterval(animateBubbles, 250);
+
+
+</script>
