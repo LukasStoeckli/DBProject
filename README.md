@@ -41,7 +41,7 @@ Weather Data    | https://www1.ncdc.noaa.gov/pub/data/ghcn/daily/ghcnd\_all.tar.
 
 
 ### Global Terrorism Map 1970 - 2017 ###
-![Alt text](Output/911.jpg?raw=true "Global Terror")
-* Open *.map/map.html*
+![Terror Map](/Output/911.png)
+* Open *./map/map.html*
 * use range slider to select year
 * mouse over location to get details
