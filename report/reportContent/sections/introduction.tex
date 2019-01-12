@@ -1,0 +1,63 @@
+
+\section{Introduction}
+
+
+problem setting
+\emph{asdf}
+
+
+
+
+\subsection{Goals}
+analysis goals
+
+
+
+
+\subsection{Sources}
+
+
+\subsubsection{ER}
+% single sources
+\begin{figure}[!hbt]
+\centering
+    \subfloat[Metal\label{fig:metal}]{\includegraphics[width=0.4\textwidth]{g2-metal.jpg}}\qquad
+    \subfloat[Country\label{fig:country}]{\includegraphics[width=0.45\textwidth]{g2-country.jpg}}\qquad
+    \subfloat[Terrorism\label{fig:terrorism}]{\includegraphics[width=0.45\textwidth]{g2-terror.jpg}}\qquad
+    \subfloat[Weather\label{fig:weather}]{\includegraphics[width=0.45\textwidth]{g2-weather.jpg}}
+\caption{Entity-Relation diagrams of single sources}
+\label{fig:example subfigure}
+\end{figure}
+
+
+
+
+\subsection{Integrated DB}
+A new Population Entity replaces the year attribute in Country. Some of the Terror data is outsourced to new Entities, as some attributes are listed data points. A new entity TerrorLocation is created to simplify relations with countries and weather data.
+
+\subsubsection{ER}
+%integrated schema
+\begin{figure}[!hbt]
+\centering
+\includegraphics[width=\textwidth]{g2-integratedSchema.jpg}
+\caption{Integrated schema}
+\label{fig:integratedSchema}
+\end{figure}
+
+
+
+\subsubsection{Logical Schema}
+\begin{itemize}
+\item Country (\underline{countryName})
+\item MetalBand (\underline{bandName}, formed, \uwave{origin}, split)
+\item MetalStyle (\underline{SID}, \uwave{bandName}, style)
+\item Population (\underline{PID}, \uwave{country}, year, population)
+\item TerrorAttack (\underline{AID}, \uwave{EID}, attackTypeID, attackType)
+\item TerrorEvent (\underline{EID}, eventDate, approxDate, extended, resolution, \uwave{LID}, summary, crit1, crit2, crit3, doubtterr, alternativeID, alternative, multiple, success, suicide, nkill, nkillus, nkillter, nwound, nwoundus, nwoundte, property, propextentID, propextent, propvalue, propcomment, addnotes, weapdetail, gname, gsubname, gname2, gsubname2, gname3, gsubname3, motive, guncertain1, guncertain2, guncertain3, individual, nperps, nperpcap, claimed, claimmodeID, claimmode, claim2, claimmode2ID, claimmode2, claim3, claimmode3ID, claimmode3, compclaim, ishostkid, nhostkid, nhostkidus, nhours, ndays, divert, country, ransom, ransomamt, ransomamtus, ransompaid, ransompaidus, ransomnote, hostkidoutcomeID, hostkidoutcome, nreleased, scite1, scite2, scite3, dbsource, INT\_LOG, INT\_IDEO, INT\_MISC, INT\_ANY)
+\item TerrorLocation (\underline{LID}, countryID, \uwave{country}, regionID, region, provstate, city, latitude, longitude, specificity, vicinity, location)
+\item TerrorRelation (\underline{RID}, \uwave{EID}, {related})
+\item TerrorTarget (\underline{TID}, \uwave{EID}, targTypeID, targType, targSubtypeID, targSubtype, corp, target, nationalityID, nationality)
+\item TerrorWeapon (\underline{WID}, \uwave{EID}, weapTypeID, weapType, weapSubtypeID, weapSubtype)
+\item Weather (\underline{\uwave{LID}, weatherDate}, rain, temperature, station)
+\end{itemize}
+

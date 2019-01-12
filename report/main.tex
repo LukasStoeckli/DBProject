@@ -1,0 +1,261 @@
+% =======================================================================================
+% =======================================================================================
+% === IMPORTANT NOTE FOR STUDENTS:                                                    ===
+% =======================================================================================
+% === Do NOT change anything in this file. Only change files in the "reportContent"   ===
+% === subfolder.                                                                      ===
+% =======================================================================================
+% =======================================================================================
+
+\documentclass[runningheads,a4paper]{llncs}
+
+\usepackage{makeidx}
+\usepackage{chapterbib}
+%\usepackage[english,german]{babel}
+%\selectlanguage{german}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+
+%
+%
+% Note for the assistants: Add the different image paths of the student groups.
+%
+\usepackage{graphicx}\graphicspath{{images/}{reportContent/images/}%{reportContent\_g1/images/}{reportContent\_g2/images/}...
+}
+
+
+\usepackage{import}
+\usepackage{lipsum}
+\usepackage{setspace}
+\usepackage{pdfpages}
+
+% =======================================================================================
+% === The following latex-packages should cover all your needs.                       ===
+% === If this is not the case, please write an email to one of the assistants in      ===
+% === which you inform us which additional package you need and why.                  ===
+% === (Otherwise we will not be able to generate proceedings for the course...)       ===
+% =======================================================================================
+
+
+% For URLs
+\usepackage{url}
+\usepackage[hidelinks]{hyperref}
+
+% For Subfigures
+\usepackage{subfig}
+
+% For Algorithms
+\usepackage{algorithmic}
+\usepackage{algorithm}
+
+% For Code Snippets
+\usepackage{listings}
+
+% For Todo Notes 
+\usepackage[colorinlistoftodos]{todonotes}
+
+% For Colors (\textcolor etc.)
+\usepackage{color}
+
+% For Tables
+\usepackage{multirow}
+
+% For Tikz
+\usepackage{tikz}
+
+% For References
+\usepackage{cleveref}
+
+% Required for turning proceedings on and off
+% (Source: http://tex.stackexchange.com/questions/87656/turning-parts-of-text-on-and-off)
+\usepackage{etoolbox}
+\usepackage{verbatim}\newbool{produceProceedings}
+\newbool{produceProceedingsBookVersion}
+\newenvironment{produceProceedings}{}{}
+
+% For foreign key uwaves
+\usepackage{ulem}
+\normalem
+
+
+%
+%
+% procedureProceedings : boolean
+% ==============================
+%
+% If true: Generates the proceedings.
+% If false: Generates the plain article (typically student mode).
+%
+% _______________________
+% Note for the assistants: Change to true in order to generate the proceedings.
+%
+\setbool{produceProceedings}{false}
+
+
+\ifbool{produceProceedings}{
+
+
+%
+%
+% produceProceedingsBookVersion : boolean
+% =======================================
+%
+% If true: Inserts empty pages so that every report start on an odd page which helps to print the proceedings as double pages.
+% If false: No empy pages are inserted.
+%
+% _______________________
+% Note for the assistants: Change to true in order to generate the proceedings which adds empty pages to start every report on an odd page.
+%
+\setbool{produceProceedingsBookVersion}{false}
+
+
+
+}{\AtBeginEnvironment{produceProceedings}{\comment}\AtEndEnvironment{produceProceedings}{\endcomment}}
+
+
+%
+%
+% coursename : String
+% ===================
+%
+% Name of the course / lecture.
+%
+\newcommand{\coursename}{Databases}
+
+
+%
+%
+% courseacronym : String
+% ======================
+%
+% Acronym of the course (e.g., DIS for Distributed Information Systems, or CS244 for Databases).
+%
+\newcommand{\courseacronym}{CS244}
+
+
+%
+%
+% semester : String
+% =================
+%
+% The semester (e.g., spring semester 2018 or fall semester 2018).
+%
+\newcommand{\semester}{fall semester 2018}
+
+
+%
+%
+% semesterCapitals : String
+% =========================
+%
+% The semester with startring capital letters.
+%
+\newcommand{\semesterCapitals}{Fall Semester 2018}
+
+
+%
+%
+% proceedingsSubtitle : String
+% ============================
+%
+% Subtitle of the proceedings.
+%
+\newcommand{\proceedingsSubtitle}{Data Analysis Project Reports}
+
+
+%
+%
+% rootDocument : String
+% =====================
+%
+% Set the to this document's file name.
+%
+\newcommand{\rootDocument}{main.tex}
+
+\begin{document}
+
+
+\institute{University of Basel \\ \coursename\ (\courseacronym) course \\ \semesterCapitals} % Please do NOT change this line.
+
+	
+\begin{produceProceedings}
+	
+	\begin{titlepage}
+		\includegraphics{UniBas_Logo_EN_Schwarz_RGB_65}
+		
+		\vspace{80pt}
+		
+		\centering
+		
+		\begin{spacing}{2.8}
+		{\Huge \fontfamily{phv} \bfseries Proceedings of the \coursename\ (\courseacronym) Course}
+		\end{spacing}
+		
+		\vspace{25pt}
+		
+		{\large \proceedingsSubtitle}
+		
+		\vspace{50pt}
+		
+		{\large \semesterCapitals}
+		
+		\vspace{50pt}
+		
+		{\large	Department of Mathematics and Computer Science}
+		
+		\vspace{5pt}
+		
+		{\large Faculty of Science}
+		
+		\vspace{25pt}
+		
+		{\large	University of Basel}
+	\end{titlepage}
+	
+	\ifbool{produceProceedingsBookVersion}{\frontmatter}{}
+	
+	\pagestyle{headings}
+	\addtocmark{Reports}
+	%
+	\chapter*{Preface}
+	This documents contains all student reports of the \coursename\ course (\courseacronym) held at the University of Basel in the \semester.
+	%
+	\chapter*{Organization}
+	The \coursename\ (\courseacronym) course of the \semester\ is organized by the Databases and Information Systems (DBIS) research group, Department of Mathematics and Computer Science, University of Basel.
+	%
+	\section*{Lecturer}
+	Prof.\,Dr. Heiko Schuldt (heiko.schuldt@unibas.ch) \\
+	Dr. Ivan Giangreco (ivan.giangreco@unibas.ch)
+	%
+	\section*{Assistants}
+	Lukas Probst, M.\,Sc. (lukas.probst@unibas.ch) \\
+	Alexander Stiemer, M.\,Sc. (alexander.stiemer@unibas.ch)
+	%
+	\section*{Tutors}
+	Loris Sauter, B.\,Sc. (loris.sauter@stud.unibas.ch)
+	%
+	\tableofcontents
+\end{produceProceedings}
+	
+%
+\mainmatter
+%
+
+% Note for the assistants: Add all student reports to this list in order to generate the proceedings.
+\ifbool{produceProceedingsBookVersion}{\cleardoublepage}{} \begin{cbunit}\import{reportContent/}{reportContent.tex}\end{cbunit}
+%\ifbool{produceProceedingsBookVersion}{\cleardoublepage}{} \begin{cbunit}\import{reportContent\_g1/}{reportContent.tex}\end{cbunit}
+%\ifbool{produceProceedingsBookVersion}{\cleardoublepage}{} \begin{cbunit}\import{reportContent\_g2/}{reportContent.tex}\end{cbunit}
+%...
+
+\end{document}
+
+% =======================================================================================
+% =======================================================================================
+% === IMPORTANT NOTE FOR STUDENTS:                                                    ===
+% =======================================================================================
+% === Do NOT change anything in this file. Only change files in the "reportContent"   ===
+% === subfolder.                                                                      ===
+% =======================================================================================
+% =======================================================================================
