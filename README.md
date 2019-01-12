@@ -37,7 +37,7 @@ Weather Data    | https://www1.ncdc.noaa.gov/pub/data/ghcn/daily/ghcnd\_all.tar.
 
 ### Analysis ###
 * create views with *./sql/views.sql*
-* run *$python ./src/analyze.py* to get the plots
+* in *./src/* run *$python analyze.py* to get the plots
 
 
 ### Global Terrorism Map 1970 - 2017 ###
