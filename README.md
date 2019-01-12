@@ -33,3 +33,15 @@ Weather Data    | https://www1.ncdc.noaa.gov/pub/data/ghcn/daily/ghcnd\_all.tar.
   * or place existing frames in *./data/frames/*
 * set up db with *./sql/createProject.sql*
 * in *./src/* run *$Rscript DataImport.py*
+
+
+### Analysis ###
+* create views with *./sql/views.sql*
+* run *$python ./src/analyze.py* to get the plots
+
+
+### Global Terrorism Map 1970 - 2017 ###
+![Alt text](Output/911.jpg?raw=true "Global Terror")
+* Open *.map/map.html*
+* use range slider to select year
+* mouse over location to get details
