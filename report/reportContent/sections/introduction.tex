@@ -9,52 +9,77 @@ problem setting
 
 
 \subsection{Goals}
-The goal of this project is to answer the following question:
+analysis goals
+
+
+
+
+\section{Sources}
+\begin{itemize}
+	\item Global Terrorism 1970 - 2017
 	\begin{itemize}
-		\item Are terror events dependent on the weather?
-		\item Do terror attacks influence founding/splitting of metal bands and vice versa?
-		\item Does the population influence the number of existing metal bands?
-		\item Do terror attacks have an influence on the population?
-		\item Which main genre has the most terror events?
+		\item URL: \url{https://www.kaggle.com/START-UMD/gtd}
+		\item Dimensions: 181'691 rows x 135 columns
+		\item Size: 162.8 MB
+		\item Format: CSV
 	\end{itemize}
+	\item Metal bands 1964 - 2016
+	\begin{itemize}
+		\item URL: \url{https://www.kaggle.com/mrpantherson/metal-by-nation# metal_bands_2017.csv}
+		\item Dimensions: 5000 rows x 7 columns
+		\item Size: 264 KB
+		\item Format: CSV
+	\end{itemize}
+	\item World Population 1960 - 2015
+	\begin{itemize}
+		\item URL: \url{https://www.kaggle.com/mrpantherson/metal-by-nation#world_population_1960_2015.csv}
+		\item Dimensions: 264 rows x 57 columns
+		\item Size: 125 KB
+		\item Format: CSV
+	\end{itemize}
+	\item Weather Data
+	\begin{itemize}
+		\item URL: \url{ftp://ftp.ncdc.noaa.gov/pub/data/ghcn/daily/}
+		\item Inventory
+		\begin{itemize}
+		  \item Dimensions: 65236 rows x 6 columns
+		  \item Size: 26.9 MB
+		  \item Format: TXT
+	    \end{itemize}
+		\item Daily
+		\begin{itemize}
+		  \item Dimensions: $\sim$10M rows x 35 columns
+		  \item Size: 2.9 GB
+		  \item Format: DLY
+	    \end{itemize}
+	\end{itemize}
+\end{itemize}
 
 
-
-
-
-\subsection{Sources}
-
-
-\subsubsection{ER}
-% single sources
-\begin{figure}[!hbt]
-\centering
+\subsection{ER}
+\begin{figure}[hbt!]
+	%\centering
     \subfloat[Metal\label{fig:metal}]{\includegraphics[width=0.4\textwidth]{g2-metal.jpg}}\qquad
-    \subfloat[Country\label{fig:country}]{\includegraphics[width=0.45\textwidth]{g2-country.jpg}}\qquad
     \subfloat[Terrorism\label{fig:terrorism}]{\includegraphics[width=0.45\textwidth]{g2-terror.jpg}}\qquad
-    \subfloat[Weather\label{fig:weather}]{\includegraphics[width=0.45\textwidth]{g2-weather.jpg}}
-\caption{Entity-Relation diagrams of single sources}
+    \subfloat[Country\label{fig:country}]{\includegraphics[width=0.35\textwidth]{g2-country.jpg}}\qquad
+    \subfloat[Weather\label{fig:weather}]{\includegraphics[width=0.55\textwidth]{g2-weather.jpg}}\qquad
+    \caption{Entity-Relation diagrams of single sources}
 \label{fig:example subfigure}
 \end{figure}
 
 
 
 
-\subsection{Integrated DB}
+\section{Integrated Schema}
 A new Population Entity replaces the year attribute in Country. Some of the Terror data is outsourced to new Entities, as some attributes are listed data points. A new entity TerrorLocation is created to simplify relations with countries and weather data.
 
-\subsubsection{ER}
-%integrated schema
-\begin{figure}[!hbt]
-\centering
-\includegraphics[width=\textwidth]{g2-integratedSchema.jpg}
-\caption{Integrated schema}
-\label{fig:integratedSchema}
+\subsection{ER}
+\begin{figure}[hbt!]
+	\includegraphics[width=\textwidth]{g2-integratedSchema.jpg}
+	\caption{Entity-Relation diagram integrated schema}
 \end{figure}
-
-
-
-\subsubsection{Logical Schema}
+    
+\subsection{Logical Schema}
 \begin{itemize}
 \item Country (\underline{countryName})
 \item MetalBand (\underline{bandName}, formed, \uwave{origin}, split)
