@@ -3,33 +3,38 @@ The chosen datasets are transformed and uploaded to the database where views are
 
 
 \subsection{Data Integration}
-To retrieve the integrated entities from the raw sources, \emph{R} is used as it allows to create data frames that can be pre-analyzed and written to \emph{*.csv}. The R script mostly just readjusts the columns to new frames but also cleans and splits some raw data. Appart from some character level import fixes, the following changes are made to the raw datasets:
+To retrieve the integrated entities from the raw sources, \emph{R} is used as it allows to create data frames that can be pre-analyzed and written to \emph{*.csv}. The R script mostly just readjusts the columns to new frames but also cleans and splits some raw data. Apart from some character level import fixes, the following changes are made to the raw datasets:
 \begin{itemize}
-\item Country
+\item \textbf{Country}
 The country column represents the new \emph{Country} entity. The population columns are split up and added to the new \emph{Population} entity along with country and year. 
-\item Metal
+\item \textbf{Metal}
 Everything but styles represents the new \emph{MetalBand} entity. The styles are split and added to the new \emph{MetalStyle} entity, along with the band name and an autoincrement primary key.
-\item Terror
-The distinct entries of the location columns form the new \emph{TerrorLocation} entity. These have an ID and are mapped back to the new entity \emph{TerrorEvents}. The up to four weapon types from raw data are organized in the new entity \emph{TerrorWeapon} along with the event ID. The same procedure is applied to the up to three attack and target types to yield the new entities \emph{TerrorAttack} and \emph{TerrorWeapon}. The column \emph{related} from raw data is split and added to the new entity \emph{TerrorRelation} along with the event ID and an id. Finally the for \emph{TerrorEvent}, that holds most of the raw data, the columns \emph{year}, \emph{month} \& \emph{day} are combined to eventDate.
-\item Weather
-For each terror location, the closest (< 50km) weather station and then the data for the event dates is retrieved and added to the new \emph{Weather} entity along with the location id and the weather date.
+\item \textbf{Terror}
+The distinct entries of the location columns form the new \emph{TerrorLocation} entity. These have an ID and are mapped back to the new entity \emph{TerrorEvents}. The up to four weapon types from raw data are organized in the new entity \emph{TerrorWeapon} along with the event ID. The same procedure is applied to up to three attack and target types to yield the new entities \emph{TerrorAttack} and \emph{TerrorWeapon}. The column \emph{related} from raw data is split and added to the new entity \emph{TerrorRelation} along with the event ID and an ID. Finally, for the table \emph{TerrorEvent}, that holds most of the raw data, the columns \emph{year}, \emph{month} \& \emph{day} are combined to a new column \emph{eventDate}.
+\item \textbf{Weather}
+For each terror location, the closest (< 50km) weather station and then the data for the event dates is retrieved and added to the new \emph{Weather} entity along with the location ID and the weather date.
 \end{itemize}
-Each entity's file is then uploaded to a \emph{MySQL} database by a \emph{Python} script, that reads and inserts the rows.
-
+Each entity's file is then uploaded to a \emph{MySQL} database by a \emph{Python} script, using \emph{mysql.connector}, that reads and inserts the rows.
 
 \subsection{Analysis}
+The analysis part is written in \emph{Python}, using \emph{matplotlib} to visualize the results. The scripts execute predefined queries, again with the use of \emph{mysql.connector}, plots it and saves the plots in a directory. Three kinds of plots were used:
+\begin{itemize}
+	\item \textbf{Bar plot} Used for Genre vs Terrorism.
+	\item \textbf{Star plot} Used to demonstrate influence of weather on terrorism. The star plot has the advantage of showing changes, in proportions and not only total numbers, nicely. This was achieved by rotating the axes by a certain factor.
+	\item \textbf{Graph} Used to compare all other questions. The graphs always shows two lines, one for each aspect that is inspected, to enable a direct comparison between them.
+\end{itemize}
+
 Since \emph{MySQL 5.7} doesn't support \emph{LIMIT} in subqueries, a view with the top (most bands) metal countries is created for further analysis. To answer the questions, the following data was gathered:
 \begin{itemize}
-\item Are terror events dependent on the weather?\\
+\item \textbf{Are terror events dependent on the weather?}  For the chosen aspects of terror events (attack type, attack target and use weapon) the significant entries are selected and represented in a star plot. The query matches all events which occurred at the same time and location for which there is weather data available. The result set is then further decreased by selecting only events in the predefined weather condition. The number of events is then counted for each chosen entry.
 
-\item Do terror attacks influence founding/splitting of metal bands and vice versa?\\
+\item \textbf{Do terror attacks influence founding/splitting of metal bands and vice versa?} 
 
-\item Does the population influence the number of existing metal bands?\\
+\item \textbf{Does the population influence the number of existing metal bands?}
 
-\item Do terror attacks have an influence on the population?\\
+\item \textbf{Do terror attacks have an influence on the population?}
 
-\item Which main genre has the most terror events?\\
-To get somewhat significant data, the top 30 countries with most (over 15) metal bands are selected. Then the country's main genre is selected along with the number of attacks. Group by genre, sum attacks and mean attacks by countries yields the result.
+\item \textbf{Which main genre has the most terror events?} To get somewhat significant data, the top 30 countries with most (over 15) metal bands are selected. Then the country's main genre is selected along with the number of attacks. Group by genre, sum attacks and mean attacks by countries yields the result.
 \end{itemize}
 
 
@@ -51,7 +56,7 @@ For the terror events, three aspects are chosen:
 
 These three aspects are represented by the tables \texttt{TerrorAttack}, \texttt{TerrorTarget} and \texttt{TerrorWeapons}, for which only the most significant attributes are chosen, if the total number of them is too large.
 
-\paragraph{Weather - Attack Types}
+\subsection{Weather - Attack Types}
 There are nine distinct attack types, which are all displayed in the visualization. Bombing is the most frequent one for each weather condition, followed by armed assault.
 
 \begin{figure}[!ht]
@@ -82,9 +87,7 @@ The influence of rain on attack types is very low, as the different types are pr
 
 The temperature has a greater influence on attack types. It can be observed that more armed assaults take place when the temperature rises.
 
-\newpage
-
-\paragraph{Weather - Attack Targets}
+\subsection{Weather - Attack Targets}
 The number of distinct target types is quite large, since they can be very specific (e.g. Priest). For the analysis, the ten most representative attributes have been chosen. Different to the attack type, the target types vary more for the different conditions.
 
 \begin{figure}[!ht]
@@ -116,9 +119,7 @@ It can be observed, that heavier rain results in a bigger number of attacks on m
 
 Lower temperatures have a high number of attacks on military personnel. With increasing temperature, this shifts towards civilians. Therefore, with higher temperature, more civilians but less military personnel are attacked. 
 
-\newpage
-
-\paragraph{Weather - Attack Weapon}
+\subsection{Weather - Attack Weapon}
 There are, like attack targets, many distinct attack weapons. Again, the ten most representative attributes have been chosen. The weapons have a high correlation to the attack types, seen by the attributes \texttt{Bombing/Explosion \& Unknown explosive type} and \texttt{Armed assault \& Unknown gun type}.
 
 \begin{figure}[!ht]
@@ -133,8 +134,6 @@ There are, like attack targets, many distinct attack weapons. Again, the ten mos
 
 Similar to the attack types, the influence of rain  on the used weapons can hardly be seen.
 
-
-\newpage
 
 \begin{figure}[!ht]
 \centering
@@ -205,7 +204,7 @@ Obviously population (growth) doesn't care about terror attacks. A lot of differ
 	\includegraphics[width=0.3\textwidth]{Population-Terror/g2-attackVsPopulationMoldova}
 	\caption{Italy, United Kingdom and Moldova l,blue: population / r,red: attacks}
 \end{figure}
-Some countries have a stagnating or even decreasing population after or while the presence of terrorism. Moldova is probably also communism related, the behaviour in Italy and the UK remain unknown to the authors.
+Some countries have a stagnating or even decreasing population after or during the presence of terrorism. Moldova is probably also communism related, the behaviour in Italy and the UK remain unknown to the authors.
 
 
 % GENRE VS ATTACKS
