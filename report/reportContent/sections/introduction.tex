@@ -1,37 +1,13 @@
-
+% INTRODUCTION
 \section{Introduction}
-This is the report to the databases project, taken in the fall semester 2018. At first, the problem setting, the chosen data sources and the posed questions are introduced. Following, the single source schemas and the integrated schema provide an overview of the existent data and their derived relations. After an insight into the used methods for the integration and analysis, this report is concluded with the results and lessons learned.
-
-\subsection{Problem Setting}
-The project tasks are split into four parts:
+This report covers the work on following projects tasks:
 \begin{itemize}
-	\item \textbf{Project idea:} Select multiple data sources and pose analysis goals
-	\begin{itemize}
-		\item Select two to three interesting data sources
-		\item In various sizes, formats and from multiple sources
-	\end{itemize}
-	\item \textbf{Schema integration:} Analyse the data sources and design an integrated schema
-	\begin{itemize}
-		\item Analyse data sources
-		\item Create entity relationship diagrams of single sources
-		\item Create entity relationship diagram of integrated schema with derived relations
-	\end{itemize}
-	\item \textbf{Data integration:} Integrate the data sources into a unified and normalized database
-	\begin{itemize}
-		\item Integrate the data into the global schema
-		\item Perform cleaning and normalization
-		\item Create necessary index structures
-	\end{itemize}
-	\item \textbf{Analysis and visualization:} Use the reconciled data for performing analyses and creating visualizations
-	\begin{itemize}
-		\item Use analysis queries and visualizations to achieve the analysis goals
-	\end{itemize}
+\item Select 2-3 interesting data sources in various size, format and source.
+\item Analyze sources and create Integrated schema.
+\item Integrate sources into unified and normalized database
+\item Use data for analysis queries and visualizations to achieve analysis goals.
 \end{itemize}
-
-
-
-\subsection{Goals}
-The goal of this project is to answer the following questions:
+The datatesets used for this project are Global Terrorism from 1970-2017, Metal Bands, World Population Data 1960-2015 and Global Weather Data. The following analysis goals are posed:
 \begin{itemize}
 	\item Are terror events dependent on the weather?
 	\item Do terror attacks influence founding/splitting of metal bands and vice versa?
@@ -39,11 +15,11 @@ The goal of this project is to answer the following questions:
 	\item Do terror attacks have an influence on the population?
 	\item Which main genre has the most terror events?
 \end{itemize}
+To achieve this, the single sources are analyzed and combined to an integrated schema. This allows an overview of the existent data and it's derived relations. The data is then cleaned, normalized and persisted to a database to further process it. For analyis, index structures on the foreign keys as well as views are created. Analysis queries and visualization are then used to take an insight in the posed questions. The report is concluded with the results and lessons learned.
+
 
 \section{Sources}
-Four data sources were chosen for this project. The global terrorism data source was selected at first, followed by population and metal bands. The idea of weather having an influence on terrorism occurred and a fitting weather source was select in addition to the others.
-
-This section provides a short introduction to the single data sources.
+Four data sources were chosen for this project. The global terrorism data source  deemed to be interesting and was selected at first, followed by metal bands which strangely also had the population data (different file, but same source). The idea of weather having an influence on terrorism occurred and a fitting weather source was selected in addition to the others. The next part provides a short introduction to the single data sources.
 
 \subsection{Global Terrorism 1970 - 2017}
 \begin{itemize}
@@ -53,7 +29,7 @@ This section provides a short introduction to the single data sources.
 	\item Format: CSV
 \end{itemize}
 
-This data set contains a list of global terror events, beginning in 1970 and ending in 2017. The events state a location, time and descriptions of attack groups, targets, weapons used, etc.. 
+This data set contains a list of global terror events. The tuples state a location, time and descriptions of attack groups, targets, weapons used, etc.. 
 	
 \subsection{Metal bands 1964 - 2016}
 \begin{itemize}
@@ -94,30 +70,31 @@ This data set contains the population of 264 countries for each year, starting i
 
 The inventory file contains information about the time span of measurements, location and id of all weather station from the National Oceanic and Atmospheric Administration. After the relevant stations are found, their measured data can be found in the \texttt{dly} file, which has the same name as the station id. The data consists of daily means of multiple elements (such as temperatures, precipitation, snow fall, etc.) for the whole time span the station was active.
 
-\subsection{Single source ER diagram}
-Figure \ref{fig:singlesource} shows the ER diagram of the introduced data sets. 
-
+\subsection{ER Diagram}
 \begin{figure}[hbt!]
 	%\centering
-    \subfloat[Metal\label{fig:metal}]{\includegraphics[width=0.45\textwidth]{g2-metal.jpg}}\qquad
-    \subfloat[Country\label{fig:country}]{\includegraphics[width=0.45\textwidth]{g2-country.jpg}}\qquad
+    \includegraphics[width=0.35\textwidth]{g2-metal.jpg}
+    \includegraphics[width=0.50\textwidth]{g2-country.jpg}
+    \caption{Metal and Population}
+\label{fig:singlesource}
+\end{figure}
+
+\begin{figure}[hbt!]
     \centering
-    \subfloat[Terrorism\label{fig:terrorism}]{\includegraphics[width=0.65\textwidth]{g2-terror.jpg}}\qquad\\
+    \includegraphics[width=0.60\textwidth]{g2-terror.jpg}
+    \caption{Terrorism}
+\label{fig:singlesource}
+\end{figure}
+
+\begin{figure}[hbt!]
     \centering
-    \subfloat[Weather\label{fig:weather}]{\includegraphics[width=\textwidth]{g2-weather.jpg}}\qquad
-    \caption{Entity-Relation diagrams of single sources}
+    \includegraphics[width=0.8\textwidth]{g2-weather.jpg}
+    \caption{Weather}
 \label{fig:singlesource}
 \end{figure}
 
 \section{Integrated Schema}
-A new population entity replaces the year attribute in \texttt{Country}. Some of the terror data is outsourced to new entities, as some attributes are listed data points. A new entity \texttt{TerrorLocation} is created to simplify relations with countries and weather data.
-
-\subsection{ER}
-\begin{figure}[hbt!]
-	\centering
-	\includegraphics[width=1.4\textwidth, angle=270]{g2-integratedSchema.jpg}
-	\caption{Entity-Relation diagram integrated schema}
-\end{figure}
+A new population entity replaces the year attribute in \emph{Country}. A new MetalStyle entity replaces the styles attribute in \emph{MetalBand}. Some of the terror data is outsourced to new entities, as some attributes are listed data points (colnames with index), as well as the \emph{related} attribute that has e new entity \emph{TerrorRelation}. A new entity \emph{TerrorLocation} with unique locations is created to simplify relations with countries and weather data.
     
 \subsection{Logical Schema}
 \begin{itemize}
@@ -134,3 +111,12 @@ A new population entity replaces the year attribute in \texttt{Country}. Some of
 \item Weather (\underline{\uwave{LID}, weatherDate}, rain, temperature, station)
 \end{itemize}
 
+\subsection{ER}
+\emph{see next page}
+\begin{figure}[hbt!]
+	\centering
+	\includegraphics[width=1.4\textwidth, angle=270]{g2-integratedSchema.jpg}
+	\caption{Integrated schema}
+\end{figure}
+
+\newpage
