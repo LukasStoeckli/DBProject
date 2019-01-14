@@ -1,10 +1,32 @@
-\section{Methods \& Results}
+\section{Methods}
+The chosen datasets are transformed and uploaded to the database where views are created. The data is then used to answer and visualize given questions by plots and maps.
+
+
 \subsection{Data Integration}
+To retrieve the integrated entities from the raw sources, \emph{R} is used as it allows to create data frames that can be pre-analyzed and written to \emph{*.csv}. The R script mostly just readjusts the columns to new frames but also cleans and splits some raw data. Appart from some character level import fixes, the following changes are made to the raw datasets:
+\begin{itemize}
+\item Country
+The country column represents the new \emph{Country} entity. The population columns are split up and added to the new \emph{Population} entity along with country and year. 
+\item Metal
+Everything but styles represents the new \emph{MetalBand} entity. The styles are split and added to the new \emph{MetalStyle} entity, along with the band name and an autoincrement primary key.
+\item Terror
+The distinct entries of the location columns form the new \emph{TerrorLocation} entity. These have an ID and are mapped back to the new entity \emph{TerrorEvents}. The up to four weapon types from raw data are organized in the new entity \emph{TerrorWeapon} along with the event ID. The same procedure is applied to the up to three attack and target types to yield the new entities \emph{TerrorAttack} and \emph{TerrorWeapon}. The column \emph{related} from raw data is split and added to the new entity \emph{TerrorRelation} along with the event ID and an id. Finally the for \emph{TerrorEvent}, that holds most of the raw data, the columns \emph{year}, \emph{month} \& \emph{day} are combined to eventDate.
+\item Weather
+For each terror location, the closest (< 50km) weather station and then the data for the event dates is retrieved and added to the new \emph{Weather} entity along with the location id and the weather date.
+\end{itemize}
+
+Each entity's file is then uploaded to a \emph{MySQL} database by a \emph{Python} script, that reads and inserts the rows.
+
+
+\subsection{Analysis}
+
+
+
 
 \section{Results}
 The posed questions are answered by creating visualizations of the integrated data. Each visualization is designed to show if there is a correlation between the inspected attributes.
 
-\subsubsection{Are terror events dependent on the weather?}
+\subsection{Are terror events dependent on the weather?}
 Here, the influence of the weather on terror events is inspected. The visualizations show the number of events that took place under the specified conditions. The weather influence is measured by observing the distribution of terror events for different conditions.
 
 The weather data contains information about the daily mean temperature and daily precipitation. The temperature is split into intervals of 10$^\circ$C beginning with $< -10^\circ$C and ending with $> 30^\circ$C. The daily precipitation is mapped to types of rain, namely: no rain, light rain, moderate rain, heavy rain and very heavy rain.
