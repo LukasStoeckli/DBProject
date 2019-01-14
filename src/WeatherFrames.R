@@ -1,5 +1,6 @@
 # ----------------------- stations mapping ------------------
-# get station closest to terrorLocations
+
+# used for geodistance of events and stations
 library(geosphere)
 
 te <- read.csv("terrorEvent.csv")
@@ -23,8 +24,6 @@ colnames(locations) <- c("LID", "longitude", "latitude", "year", "date")
 
 # remomve entries with missing location values
 locations <- locations[complete.cases(locations),]
-
-# locations <- locations[1:44283,]
 
 counter <- 0
 
