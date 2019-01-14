@@ -6,6 +6,8 @@ logs/**
 
 *.bak
 
+src/DataImport.R
+
 report/main.aux
 report/main.dvi
 report/main.log
