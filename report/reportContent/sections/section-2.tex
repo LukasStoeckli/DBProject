@@ -28,17 +28,18 @@ Since \emph{MySQL 5.7} doesn't support \emph{LIMIT} in subqueries, a view with t
 \begin{itemize}
 \item \textbf{Are terror events dependent on the weather?}  For the chosen aspects of terror events (attack type, attack target and use weapon) the significant entries are selected and represented in a star plot. The query matches all events which occurred at the same time and location for which there is weather data available. The result set is then further decreased by selecting only events in the predefined weather condition. The number of events is then counted for each chosen entry.
 
-\item \textbf{Do terror attacks influence founding/splitting of metal bands and vice versa?} 
-
+\item \textbf{Do terror attacks influence founding/splitting of metal bands and vice versa?}
+A list of countries that have both band and terrorism data is retrieved, then for each country the terrorism and band data is retrieved. To get the mean a list is used where formed gets added and split gets subtracted.
 \item \textbf{Does the population influence the number of existing metal bands?}
-
+A list of countries that have both band and population data is retrieved, then for each country the population and band data is retrieved. To get the mean a list is used where formed gets added and split gets subtracted.
 \item \textbf{Do terror attacks have an influence on the population?}
-
+A list of countries that have both attack and population data is retrieved. Then for each country the yearly attack and population data is retrieved.
 \item \textbf{Which main genre has the most terror events?} To get somewhat significant data, the top 30 countries with most (over 15) metal bands are selected. Then the country's main genre is selected along with the number of attacks. Group by genre, sum attacks and mean attacks by countries yields the result.
 \end{itemize}
 
 
 
+\newpage
 \section{Results}
 The posed questions are answered by creating visualizations of the integrated data. Each visualization is designed to show if there is a correlation between the inspected attributes.
 
