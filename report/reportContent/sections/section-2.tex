@@ -57,10 +57,12 @@ For the terror events, three aspects are chosen:
 
 These three aspects are represented by the tables \texttt{TerrorAttack}, \texttt{TerrorTarget} and \texttt{TerrorWeapons}, for which only the most significant attributes are chosen, if the total number of them is too large.
 
+\newpage
+
 \subsection{Weather - Attack Types}
 There are nine distinct attack types, which are all displayed in the visualization. Bombing is the most frequent one for each weather condition, followed by armed assault.
 
-\begin{figure}[!ht]
+\begin{figure}[!hbt]
 \centering
     \subfloat[]{\includegraphics[width=.6\textwidth]{Rain-Attack/g2-rain0_starDiagram}}\qquad\\
     \subfloat[]{\includegraphics[width=.29\textwidth]{Rain-Attack/g2-rain01-1_starDiagram}}\qquad
@@ -74,7 +76,7 @@ The influence of rain on attack types is very low, as the different types are pr
 
 \newpage
 
-\begin{figure}[!ht]
+\begin{figure}[!hbt]
 \centering
     \subfloat[]{\includegraphics[width=.28\textwidth]{Temp-Attack/g2-temp<-100_starDiagram}}\qquad
     \subfloat[]{\includegraphics[width=.29\textwidth]{Temp-Attack/g2-temp-101-0_starDiagram}}\qquad
@@ -87,6 +89,8 @@ The influence of rain on attack types is very low, as the different types are pr
 \end{figure}
 
 The temperature has a greater influence on attack types. It can be observed that more armed assaults take place when the temperature rises.
+
+\newpage
 
 \subsection{Weather - Attack Targets}
 The number of distinct target types is quite large, since they can be very specific (e.g. Priest). For the analysis, the ten most representative attributes have been chosen. Different to the attack type, the target types vary more for the different conditions.
@@ -102,7 +106,6 @@ The number of distinct target types is quite large, since they can be very speci
 \end{figure}
 
 It can be observed, that heavier rain results in a bigger number of attacks on military units, patrols and convoys.
-
 
 \newpage
 
@@ -120,6 +123,8 @@ It can be observed, that heavier rain results in a bigger number of attacks on m
 
 Lower temperatures have a high number of attacks on military personnel. With increasing temperature, this shifts towards civilians. Therefore, with higher temperature, more civilians but less military personnel are attacked. 
 
+\newpage
+
 \subsection{Weather - Attack Weapon}
 There are, like attack targets, many distinct attack weapons. Again, the ten most representative attributes have been chosen. The weapons have a high correlation to the attack types, seen by the attributes \texttt{Bombing/Explosion \& Unknown explosive type} and \texttt{Armed assault \& Unknown gun type}.
 
@@ -135,6 +140,7 @@ There are, like attack targets, many distinct attack weapons. Again, the ten mos
 
 Similar to the attack types, the influence of rain  on the used weapons can hardly be seen.
 
+\newpage
 
 \begin{figure}[!ht]
 \centering
@@ -151,12 +157,10 @@ Similar to the attack types, the influence of rain  on the used weapons can hard
 As the armed assaults increase with temperature, the number of guns used increases as well.
 
 
-
-
-
 % TERROR VS NR OF METAL BANDS
 \subsection{Terrorism vs number of metal bands}
-Are acts of terrorism related to the number of metal bands? These plots show the number of formed, split and existing metalbands vs the number of attacks per year.
+Are acts of terrorism related to the number of metal bands? These plots show the number of formed, split and existing metal bands vs the number of attacks per year.
+
 \begin{figure}[hbt!]
 	\includegraphics[width=0.3\textwidth]{Band-Terror/g2-attacksVsBandsFormed}
 	\centering
@@ -164,12 +168,14 @@ Are acts of terrorism related to the number of metal bands? These plots show the
 	\includegraphics[width=0.3\textwidth]{Band-Terror/g2-attacksVsBandsExisting}
 	\caption{formed, split and existing | l,blue: bands / r,red: attacks}
 \end{figure}
+
 The curves of formed and split metal bands show the same evolution. First the data is aligned, then it diverges. To have another view, the mean data (existing bands) was also plotted. One could say that terrorism triggered the creation of metal, but then metal went all in. A peak of terrorism then stopped the rapid growth. But no, the number of terror attacks is probably not related to the number of metal bands.
 
 
 % POPULATION VS NR OF METAL BANDS
 \subsection{Population vs number of metal bands}
 Is population growth related to number of metal bands? To answer this question, a country's population was plotted against the number of existing metal bands in this country.
+
 \begin{figure}[ht!]
 	\includegraphics[width=0.3\textwidth]{Population-Bands/g2-populationVsBandFinland}
 	\centering
@@ -177,7 +183,9 @@ Is population growth related to number of metal bands? To answer this question, 
 	\includegraphics[width=0.3\textwidth]{Population-Bands/g2-populationVsBandGermany}
 	\caption{Finland, Sweden and Germany | l,blue: population / r,red: bands}
 \end{figure}
+
 There was a lot of different patterns for population, while the band curve pretty much remains the same, but no interesting correlation. What was found, though, were countries that show an opposite behaviour for population and metal bands.
+
 \begin{figure}[hbt!]
 	\includegraphics[width=0.3\textwidth]{Population-Bands/g2-populationVsBandUkraine}
 	\centering
@@ -185,11 +193,14 @@ There was a lot of different patterns for population, while the band curve prett
 	\includegraphics[width=0.3\textwidth]{Population-Bands/g2-populationVsBandLatvia}
 	\caption{Ukraine, Romania and Latvia | l,blue: population / r,red: bands}
 \end{figure}
-It seems as after the rise of metal the population crashed. As it turned out, after opening the borders, due to the fall of communism, there was a lot of emmigration. So population growth and metal bands propably aren't related either.
+It seems as after the rise of metal the population crashed. As it turned out, after opening the borders, due to the fall of communism, there was a lot of emigration. So population growth and metal bands probably aren't related either.
+
+\newpage
 
 % TERROR VS POPULATION
 \subsection{Terrorism vs population}
 Are acts or terror related to population? The number of terror attacks are plotted against the population by country.
+
 \begin{figure}[hbt!]
 	\includegraphics[width=0.3\textwidth]{Population-Terror/g2-attackVsPopulationSudan}
 	\centering
@@ -197,7 +208,9 @@ Are acts or terror related to population? The number of terror attacks are plott
 	\includegraphics[width=0.3\textwidth]{Population-Terror/g2-attackVsPopulationTurkey}
 	\caption{Sudan, Colombia and Turkey l,blue: population / r,red: attacks}
 \end{figure}
+
 Obviously population (growth) doesn't care about terror attacks. A lot of different patterns were found, both for population and terrorism. So terrorism and population probably aren't related either, although some countries show interesting figures.
+
 \begin{figure}[hbt!]
 	\includegraphics[width=0.3\textwidth]{Population-Terror/g2-attackVsPopulationItaly}
 	\centering
@@ -205,20 +218,27 @@ Obviously population (growth) doesn't care about terror attacks. A lot of differ
 	\includegraphics[width=0.3\textwidth]{Population-Terror/g2-attackVsPopulationMoldova}
 	\caption{Italy, United Kingdom and Moldova l,blue: population / r,red: attacks}
 \end{figure}
+
 Some countries have a stagnating or even decreasing population after or during the presence of terrorism. Moldova is probably also communism related, the behaviour in Italy and the UK remain unknown to the authors.
 
+\newpage
 
 % GENRE VS ATTACKS
 \subsection{A country's main genre vs terror attacks}
 Does a country's main (most represented) metal genre have influence on terror?
 How do you compare metal genre with terrorism? Comparing band names with types and subtypes of attacks, targets and weapons brought two results: The is a metal band and a terror group called \emph{Condor} and there is a metal band called \emph{Suffocation}, which may or may not be related to 17 incidents in the past years. Number of attacks vs main genre gives us:
+
+
+
 \begin{figure}[hbt!]
 	\centering
 	\includegraphics[width=\textwidth]{g2-genreVsTerrorism}
 	\caption{Main genre vs terrorism}
 \end{figure}
+
 So if your country's main genre is progressive you should be good, if it is doom you should probably leave.
 
+\newpage
 
 % MAP
 \subsection{Terror Map}
@@ -228,4 +248,5 @@ So if your country's main genre is progressive you should be good, if it is doom
 	\includegraphics[width=\textwidth]{g2-911.png}
 	\caption{Global Terror Map}
 \end{figure}
-The terror data points were visualized with datamaps. For each year, the distinct locations were retrieved and plotted. Mouseover the location shows the city, country, number of attacks and the number of killed and wounded people.
+
+The terror data points were visualized with data maps. For each year, the distinct locations were retrieved and plotted. Mouseover the location shows the city, country, number of attacks and the number of killed and wounded people.
