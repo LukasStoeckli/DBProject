@@ -14,12 +14,23 @@ The distinct entries of the location columns form the new \emph{TerrorLocation} 
 \item Weather
 For each terror location, the closest (< 50km) weather station and then the data for the event dates is retrieved and added to the new \emph{Weather} entity along with the location id and the weather date.
 \end{itemize}
-
 Each entity's file is then uploaded to a \emph{MySQL} database by a \emph{Python} script, that reads and inserts the rows.
 
 
 \subsection{Analysis}
+Since \emph{MySQL 5.7} doesn't support \emph{LIMIT} in subqueries, a view with the top (most bands) metal countries is created for further analysis. To answer the questions, the following data was gathered:
+\begin{itemize}
+\item Are terror events dependent on the weather?\\
 
+\item Do terror attacks influence founding/splitting of metal bands and vice versa?\\
+
+\item Does the population influence the number of existing metal bands?\\
+
+\item Do terror attacks have an influence on the population?\\
+
+\item Which main genre has the most terror events?\\
+To get somewhat significant data, the top 30 countries with most (over 15) metal bands are selected. Then the country's main genre is selected along with the number of attacks. Group by genre, sum attacks and mean attacks by countries yields the result.
+\end{itemize}
 
 
 
@@ -184,7 +195,7 @@ Are acts or terror related to population? The number of terror attacks are plott
 	\centering
 	\includegraphics[width=0.3\textwidth]{Population-Terror/g2-attackVsPopulationColombia}
 	\includegraphics[width=0.3\textwidth]{Population-Terror/g2-attackVsPopulationTurkey}
-	\caption{Sudan, Colombia and Turkey}
+	\caption{Sudan, Colombia and Turkey l,blue: population / r,red: attacks}
 \end{figure}
 Obviously population (growth) doesn't care about terror attacks. A lot of different patterns were found, both for population and terrorism. So terrorism and population probably aren't related either, although some countries show interesting figures.
 \begin{figure}[hbt!]
@@ -192,7 +203,7 @@ Obviously population (growth) doesn't care about terror attacks. A lot of differ
 	\centering
 	\includegraphics[width=0.3\textwidth]{Population-Terror/g2-attackVsPopulationUnitedKingdom}
 	\includegraphics[width=0.3\textwidth]{Population-Terror/g2-attackVsPopulationMoldova}
-	\caption{Italy, United Kingdom and Moldova}
+	\caption{Italy, United Kingdom and Moldova l,blue: population / r,red: attacks}
 \end{figure}
 Some countries have a stagnating or even decreasing population after or while the presence of terrorism. Moldova is probably also communism related, the behaviour in Italy and the UK remain unknown to the authors.
 
@@ -200,7 +211,7 @@ Some countries have a stagnating or even decreasing population after or while th
 % GENRE VS ATTACKS
 \subsection{A country's main genre vs terror attacks}
 Does a country's main (most represented) metal genre have influence on terror?
-How do you compare metal genre with terrorism? Comparing band names with types and subtypes of attacks, targets and weapons brought two results: The is a metal band and a terror group called \emph{Condor} and there is a metal band called \emph{Suffocation}, which may or may not be related to 17 incidents in the past years. To get somewhat significant data, the top 30 countries with most (over 15) metal bands were selected. Then the country's main genre is selected along with the number of attacks. Group by genre, sum attacks and mean attacks by countries yields the following graph.
+How do you compare metal genre with terrorism? Comparing band names with types and subtypes of attacks, targets and weapons brought two results: The is a metal band and a terror group called \emph{Condor} and there is a metal band called \emph{Suffocation}, which may or may not be related to 17 incidents in the past years. Number of attacks vs main genre gives us:
 \begin{figure}[hbt!]
 	\centering
 	\includegraphics[width=\textwidth]{g2-genreVsTerrorism}
