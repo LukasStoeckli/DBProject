@@ -3,11 +3,11 @@
 This report covers the work on following projects tasks:
 \begin{itemize}
 \item Select 2-3 interesting data sources in various size, format and source.
-\item Analyze sources and create Integrated schema.
+\item Analyze sources and create integrated schema.
 \item Integrate sources into unified and normalized database
 \item Use data for analysis queries and visualizations to achieve analysis goals.
 \end{itemize}
-The datatesets used for this project are Global Terrorism from 1970-2017, Metal Bands, World Population Data 1960-2015 and Global Weather Data. The following analysis goals are posed:
+The datatesets used for this project are Global Terrorism from 1970-2017, Metal Bands, World Population Data from 1960-2015 and Global Weather Data. The following analysis goals are posed:
 \begin{itemize}
 	\item Are terror events dependent on the weather?
 	\item Do terror attacks influence founding/splitting of metal bands and vice versa?
@@ -15,7 +15,7 @@ The datatesets used for this project are Global Terrorism from 1970-2017, Metal 
 	\item Do terror attacks have an influence on the population?
 	\item Which main genre has the most terror events?
 \end{itemize}
-To achieve this, the single sources are analyzed and combined to an integrated schema. This allows an overview of the existent data and it's derived relations. The data is then cleaned, normalized and persisted to a database to further process it. For analyis, index structures on the foreign keys as well as views are created. Analysis queries and visualization are then used to take an insight in the posed questions. The report is concluded with the results and lessons learned.
+To achieve this, the single sources are analyzed and combined to an integrated schema. This allows an overview of the existent data and it's derived relations. The data is then cleaned, normalized and persisted to a database to further process it. For analysis, index structures on the foreign keys as well as views are created. Analysis queries and visualization are then used to take an insight in the posed questions. The report is concluded with the results and lessons learned.
 
 
 \section{Sources}
@@ -31,7 +31,7 @@ Four data sources were chosen for this project. The global terrorism data source
 
 This data set contains a list of global terror events. The tuples state a location, time and descriptions of attack groups, targets, weapons used, etc.. 
 	
-\subsection{Metal bands 1964 - 2016}
+\subsection{Metal Bands 1964 - 2016}
 \begin{itemize}
 	\item URL: \url{https://www.kaggle.com/mrpantherson/metal-by-nation# metal_bands_2017.csv}
 	\item Dimensions: 5000 rows x 7 columns
@@ -49,7 +49,7 @@ Here, 5000 metal bands are listed with the country they originate from, when the
 	\item Format: CSV
 \end{itemize}
 
-This data set contains the population of 264 countries for each year, starting in 1960 and ending in 2015.
+This data set contains the yearly population of 264 countries.
 
 \subsection{Weather Data}
 \begin{itemize}
@@ -68,7 +68,7 @@ This data set contains the population of 264 countries for each year, starting i
     \end{itemize}
 \end{itemize}
 
-The inventory file contains information about the time span of measurements, location and id of all weather station from the National Oceanic and Atmospheric Administration. After the relevant stations are found, their measured data can be found in the \texttt{dly} file, which has the same name as the station id. The data consists of daily means of multiple elements (such as temperatures, precipitation, snow fall, etc.) for the whole time span the station was active.
+The inventory file contains information about the time span of measurements, location and id of all weather stations from the National Oceanic and Atmospheric Administration. After the relevant stations are found, their measured data can be found in the \texttt{dly} file, which has the same name as the station ID. The data consists of daily means of multiple elements (such as temperatures, precipitation, snow fall, etc.) for the whole time span the station was active.
 
 \subsection{ER Diagram}
 \begin{figure}[hbt!]
@@ -94,7 +94,7 @@ The inventory file contains information about the time span of measurements, loc
 \end{figure}
 
 \section{Integrated Schema}
-A new population entity replaces the year attribute in \emph{Country}. A new MetalStyle entity replaces the styles attribute in \emph{MetalBand}. Some of the terror data is outsourced to new entities, as some attributes are listed data points (colnames with index), as well as the \emph{related} attribute that has e new entity \emph{TerrorRelation}. A new entity \emph{TerrorLocation} with unique locations is created to simplify relations with countries and weather data.
+A new population entity replaces the year attribute in \emph{Country}. A new MetalStyle entity replaces the styles attribute in \emph{MetalBand}. Some of the terror data is outsourced to new entities, as some attributes are listed data points (same colunm name with different index), as well as the \emph{related} attribute that has e new entity \emph{TerrorRelation}. A new entity \emph{TerrorLocation} with unique locations is created to simplify relations with countries and weather data.
     
 \subsection{Logical Schema}
 \begin{itemize}
@@ -111,10 +111,8 @@ A new population entity replaces the year attribute in \emph{Country}. A new Met
 \item Weather (\underline{\uwave{LID}, weatherDate}, rain, temperature, station)
 \end{itemize}
 
-\newpage
-
 \subsection{ER}
-
+\emph{see next page}
 \begin{figure}[hbt!]
 	\centering
 	\includegraphics[width=1.4\textwidth, angle=270]{g2-integratedSchema.jpg}
