@@ -52,6 +52,8 @@ This section provides a short introduction to the single data sources.
 	\item Size: 162.8 MB
 	\item Format: CSV
 \end{itemize}
+
+This data set contains a list of global terror events, beginning in 1970 and ending in 2017. The events state a location, time and descriptions of attack groups, targets, weapons used, etc.. 
 	
 \subsection{Metal bands 1964 - 2016}
 \begin{itemize}
@@ -61,6 +63,8 @@ This section provides a short introduction to the single data sources.
 	\item Format: CSV
 \end{itemize}
 
+Here, 5000 metal bands are listed with the country they originate from, when they were formed and when they split up. Additionally, one or multiple metal styles are given for each band.
+
 \subsection{World Population 1960 - 2015}
 \begin{itemize}
 	\item URL: \url{https://www.kaggle.com/mrpantherson/metal-by-nation#world_population_1960_2015.csv}
@@ -68,6 +72,8 @@ This section provides a short introduction to the single data sources.
 	\item Size: 125 KB
 	\item Format: CSV
 \end{itemize}
+
+This data set contains the population of 264 countries for each year, starting in 1960 and ending in 2015.
 
 \subsection{Weather Data}
 \begin{itemize}
@@ -88,7 +94,9 @@ This section provides a short introduction to the single data sources.
 
 The inventory file contains information about the time span of measurements, location and id of all weather station from the National Oceanic and Atmospheric Administration. After the relevant stations are found, their measured data can be found in the \texttt{dly} file, which has the same name as the station id. The data consists of daily means of multiple elements (such as temperatures, precipitation, snow fall, etc.) for the whole time span the station was active.
 
-\subsection{ER}
+\subsection{Single source ER diagram}
+Figure \ref{fig:singlesource} shows the ER diagram of the introduced data sets. 
+
 \begin{figure}[hbt!]
 	%\centering
     \subfloat[Metal\label{fig:metal}]{\includegraphics[width=0.45\textwidth]{g2-metal.jpg}}\qquad
@@ -98,14 +106,11 @@ The inventory file contains information about the time span of measurements, loc
     \centering
     \subfloat[Weather\label{fig:weather}]{\includegraphics[width=\textwidth]{g2-weather.jpg}}\qquad
     \caption{Entity-Relation diagrams of single sources}
-\label{fig:example subfigure}
+\label{fig:singlesource}
 \end{figure}
 
-
-
-
 \section{Integrated Schema}
-A new Population Entity replaces the year attribute in Country. Some of the Terror data is outsourced to new Entities, as some attributes are listed data points. A new entity TerrorLocation is created to simplify relations with countries and weather data.
+A new population entity replaces the year attribute in \texttt{Country}. Some of the terror data is outsourced to new entities, as some attributes are listed data points. A new entity \texttt{TerrorLocation} is created to simplify relations with countries and weather data.
 
 \subsection{ER}
 \begin{figure}[hbt!]
