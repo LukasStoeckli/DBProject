@@ -1,68 +1,92 @@
 
 \section{Introduction}
+This is the report to the databases project, taken in the fall semester 2018. At first, the problem setting, the chosen data sources and the posed questions are introduced. Following, the single source schemas and the integrated schema provide an overview of the existent data and their derived relations. After an insight into the used methods for the integration and analysis, this report is concluded with the results and lessons learned.
 
-
-problem setting
-\emph{asdf}
-
+\subsection{Problem Setting}
+The project tasks are split into four parts:
+\begin{itemize}
+	\item \textbf{Project idea:} Select multiple data sources and pose analysis goals
+	\begin{itemize}
+		\item Select two to three interesting data sources
+		\item In various sizes, formats and from multiple sources
+	\end{itemize}
+	\item \textbf{Schema integration:} Analyse the data sources and design an integrated schema
+	\begin{itemize}
+		\item Analyse data sources
+		\item Create entity relationship diagrams of single sources
+		\item Create entity relationship diagram of integrated schema with derived relations
+	\end{itemize}
+	\item \textbf{Data integration:} Integrate the data sources into a unified and normalized database
+	\begin{itemize}
+		\item Integrate the data into the global schema
+		\item Perform cleaning and normalization
+		\item Create necessary index structures
+	\end{itemize}
+	\item \textbf{Analysis and visualization:} Use the reconciled data for performing analyses and creating visualizations
+	\begin{itemize}
+		\item Use analysis queries and visualizations to achieve the analysis goals
+	\end{itemize}
+\end{itemize}
 
 
 
 \subsection{Goals}
-analysis goals bla bla
-
+The goal of this project is to answer the following questions:
 \begin{itemize}
-	\item Are acts of terror dependent on the weather?
-	\item Do terror attacks influence founding/splitting of metal bands? Vice versa?
+	\item Are terror events dependent on the weather?
+	\item Do terror attacks influence founding/splitting of metal bands and vice versa?
 	\item Does the population influence the number of existing metal bands?
 	\item Do terror attacks have an influence on the population?
 	\item Which main genre has the most terror events?
 \end{itemize}
 
-
-
-
 \section{Sources}
-The following sources were used for this project:
+Four data sources were chosen for this project. The global terrorism data source was selected at first, followed by population and metal bands. The idea of weather having an influence on terrorism occurred and a fitting weather source was select in addition to the others.
+
+This section provides a short introduction to the single data sources.
+
+\subsection{Global Terrorism 1970 - 2017}
 \begin{itemize}
-	\item Global Terrorism 1970 - 2017
-	\begin{itemize}
-		\item URL: \url{https://www.kaggle.com/START-UMD/gtd}
-		\item Dimensions: 181'691 rows x 135 columns
-		\item Size: 162.8 MB
-		\item Format: CSV
-	\end{itemize}
-	\item Metal bands 1964 - 2016
-	\begin{itemize}
-		\item URL: \url{https://www.kaggle.com/mrpantherson/metal-by-nation# metal_bands_2017.csv}
-		\item Dimensions: 5000 rows x 7 columns
-		\item Size: 264 KB
-		\item Format: CSV
-	\end{itemize}
-	\item World Population 1960 - 2015
-	\begin{itemize}
-		\item URL: \url{https://www.kaggle.com/mrpantherson/metal-by-nation#world_population_1960_2015.csv}
-		\item Dimensions: 264 rows x 57 columns
-		\item Size: 125 KB
-		\item Format: CSV
-	\end{itemize}
-	\item Weather Data
-	\begin{itemize}
-		\item URL: \url{ftp://ftp.ncdc.noaa.gov/pub/data/ghcn/daily/}
-		\item Inventory
-		\begin{itemize}
-		  \item Dimensions: 65236 rows x 6 columns
-		  \item Size: 26.9 MB
-		  \item Format: TXT
-	    \end{itemize}
-		\item Daily
-		\begin{itemize}
-		  \item Dimensions: $\sim$10M rows x 35 columns
-		  \item Size: 2.9 GB
-		  \item Format: DLY
-	    \end{itemize}
-	\end{itemize}
+	\item URL: \url{https://www.kaggle.com/START-UMD/gtd}
+	\item Dimensions: 181'691 rows x 135 columns
+	\item Size: 162.8 MB
+	\item Format: CSV
 \end{itemize}
+	
+\subsection{Metal bands 1964 - 2016}
+\begin{itemize}
+	\item URL: \url{https://www.kaggle.com/mrpantherson/metal-by-nation# metal_bands_2017.csv}
+	\item Dimensions: 5000 rows x 7 columns
+	\item Size: 264 KB
+	\item Format: CSV
+\end{itemize}
+
+\subsection{World Population 1960 - 2015}
+\begin{itemize}
+	\item URL: \url{https://www.kaggle.com/mrpantherson/metal-by-nation#world_population_1960_2015.csv}
+	\item Dimensions: 264 rows x 57 columns
+	\item Size: 125 KB
+	\item Format: CSV
+\end{itemize}
+
+\subsection{Weather Data}
+\begin{itemize}
+	\item URL: \url{ftp://ftp.ncdc.noaa.gov/pub/data/ghcn/daily/}
+	\item Inventory
+	\begin{itemize}
+	  \item Dimensions: 65236 rows x 6 columns
+	  \item Size: 26.9 MB
+	  \item Format: TXT
+    \end{itemize}
+	\item Daily
+	\begin{itemize}
+	  \item Dimensions: $\sim$10M rows x 35 columns
+	  \item Size: 2.9 GB
+	  \item Format: DLY
+    \end{itemize}
+\end{itemize}
+
+The inventory file contains information about the time span of measurements, location and id of all weather station from the National Oceanic and Atmospheric Administration. After the relevant stations are found, their measured data can be found in the \texttt{dly} file, which has the same name as the station id. The data consists of daily means of multiple elements (such as temperatures, precipitation, snow fall, etc.) for the whole time span the station was active.
 
 \subsection{ER}
 \begin{figure}[hbt!]
